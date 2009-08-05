@@ -1,0 +1,68 @@
+/* Only constrain width on a wiki page */
+body.wiki #main {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styles for the path of hierarchical pages */
+p.path { 
+  margin: 0 0 0 0; 
+  padding: 0.9em 0 .5em; 
+  color: #821818;
+  font-family: 'Tahoma',Arial,Verdana,'Bitstream Vera Sans',Helvetica,sans-serif;
+  font-weight: bold;
+  font-size: 13px; 
+}
+p.path :link, p.path :visited { 
+  margin: 0 .2em;
+  color: #821818;
+  border: none;
+}
+p.path :link:hover, p.path :visited:hover {
+  color: #fff;
+  background-color: #821818;
+  border-bottom: none;
+}
+
+p.path .sep { color: #666; padding: 0 }
+p.path .pathentry { float: left }
+
+/* Styles for the TracGuideToc wikimacro */
+.wiki-toc {
+ position: relative;
+ float: right;
+ max-width: 250px;
+ padding: 1.1em 1.5em 1.1em 2.4em;
+ margin: 0em -5.75em 0 2.96em;
+ border: none;
+ border-left: 2px solid #e2e4e9;
+ background-color: #fff;
+ font-family: 'Tahoma',Arial,Verdana,'Bitstream Vera Sans',Helvetica,sans-serif;
+ font-weight: bold;
+ font-size: 11px;
+ line-height: 12px;
+}
+.wiki-toc h4 { font-size: 12px; margin: 0 }
+.wiki-toc ul, .wiki-toc ol {
+  color: #821818;
+  list-style: disc; 
+  padding: 0; 
+  padding-left: 1.2em; 
+  padding-bottom: 0.8em; 
+  margin: 0 
+}
+.wiki-toc ul ul, .wiki-toc ol ol { 
+  padding: 0; 
+  padding-left: 1.2em; 
+  padding-bottom: 0.5em; 
+}
+.wiki-toc ul ul ul, .wiki-toc ol ol ol { 
+  padding: 0; 
+  padding-left: 1.2em; 
+  padding-bottom: 0; 
+}
+.wiki-toc li { margin: 0; padding: 1px; }
+.wiki-toc .active { background: #ff9; position: relative; }
+
+.wiki-toc :link, .wiki-toc :visited { border: none; }

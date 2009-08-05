@@ -1,0 +1,28 @@
+/* Hide navigation and other dynamic features */
+#header, #altlinks, #help { display: none }
+.nav, form, .buttons form, form .buttons, form .inlinebuttons, .noprint {
+ display: none;
+}
+form.printableform { display: block }
+
+/* Theme changes for printing */
+body {
+  background: none;
+  background-image: none;
+  background-color: #fff;
+}
+#banner-print { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  width: 960px;
+}
+#banner-print div { 
+  position: relative; 
+  margin-left: 48px;
+  margin-right: 48px;
+  padding-left: 64px;
+  padding-right: 64px;
+  background-color: #fff;
+}
