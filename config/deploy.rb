@@ -42,10 +42,23 @@ set :git_shallow_clone, 1
 #host, sudo might be unavailable to you, or maybe you just want to avoid using sudo.
 set :use_sudo,    false
 
+# Liam: overide the default task as we are deploying a static site
+namespace :deploy do
+  desc "Restart Application"
+  task :restart, :roles => :app do
+    puts "Restart task has been disabled"
+  end
+end
+
 # Custom
 namespace :custom do
+  
+  desc 'Generate the website help and  documentation'
+  task "website" do
+    sh "jekyll #{webroot}"
+  end
 
-  desc 'reado symlinks in the web root.'
+  desc 'redo other symlinks in the web root'
   task :link_webroot do
     run "ln -nfs /var/capistrano/git/current/public #{webroot}/git"
     run "ln -nfs /var/capistrano/akita-on-rails/current/public #{webroot}/akita-on-rails"
@@ -56,3 +69,8 @@ namespace :custom do
   end
 
 end
+
+# use our custom tasks at the appropriate time
+# e.g. before :deploy, :my_custom_task
+#      after  "deploy:symlink", :do_this, :and_do_that
+after "deploy:restart", "custom:website"
