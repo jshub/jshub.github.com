@@ -773,3 +773,28 @@ h1 *.pathentry { font-size: 14px; }
 #banner-print {
   display: none;
 }
+
+/* Styles for the source browser */
+/* Stop the table from being biggger than the page */
+#dirlist td.name {
+  width: auto;
+}
+#dirlist td.change {
+  white-space: normal;
+}
+/* Align text across columns */
+#chglist td.date,
+#chglist td.author {
+  padding-top: 0.3em;
+}
+#chglist td.summary {
+  vertical-align: top;
+}
+/* Hack to shrink the wdth of tables with changeset hashes in */
+#dirlist td.rev,
+#chglist td.rev,
+#chglist td.chgset {
+  max-width: 60px;
+  overflow: hidden;
+}
+

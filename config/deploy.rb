@@ -55,7 +55,7 @@ namespace :custom do
   
   desc 'Generate the website help and  documentation'
   task "website" do
-    sh "jekyll #{webroot}"
+    run "cd #{current_path} && jekyll --no-auto #{webroot}"
   end
 
   desc 'redo other symlinks in the web root'

@@ -1,4 +1,6 @@
+auto: true
 exclude:
+- NOTES.txt
 - .git
 - .gitignore
 - Rakefile

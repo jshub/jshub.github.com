@@ -1,0 +1,9 @@
+Notes
+=====
+
+* Care should be taken with root relative links as the site may not always be at the same level in a hierarchy.
+* The target directory needs to be writable by the `capistrano` user.
+* By default Jekyll will merge the generated files with those existing at the target location. 
+  Occasional pruning will be required after any rearrangement.
+* There are a number of symlinks used by Passenger to serve Rails apps as part of the site.
+  If these are deleted you can use the relevant projects `cap deploy:setup` task to recreate them.
