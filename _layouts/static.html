@@ -3,44 +3,78 @@
 <html>
 <head>
 	<title>{{ page.title }} - jsHub</title>
-  <link type="text/css" rel="stylesheet" media="screen" href="/stylesheets/staticpages.css" />
-  <!--[if lte IE 7]>
-  <link rel="stylesheet" type="text/css" href="/stylesheets/ie7.css" />
-  <![endif]-->
-  <!--[if lte IE 6]>
-  <link rel="stylesheet" type="text/css" href="/stylesheets/ie6.css" />
-  <![endif]-->  
-</head>
-<body>
+  <link rel="stylesheet" href="/stylesheets/trac.css" type="text/css" />
+  <link rel="stylesheet" href="/stylesheets/wiki.css" type="text/css" />
+  <link rel="stylesheet" href="/stylesheets/code.css" type="text/css" />
+  <link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" />
 
+<!-- 
+  <script type="text/javascript" src="/trac/chrome/common/js/jquery.js"></script>
+  <script type="text/javascript" src="/trac/chrome/common/js/trac.js"></script>
+  <script type="text/javascript" src="/trac/chrome/common/js/search.js"></script>
+-->
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/trac/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/ie7.css" />
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/ie6.css" />
+    <![endif]-->  
+</head>
+<body class="wiki">
+  <div id="banner-print">
+    <div>
+      <img src="/images/theme/jshub_logo_tiny_black.png" alt="" />
+    </div>
+  </div>
   <div id="banner">
     <div id="header">
-      <a id="logo" href="/">
-        <img alt="jsHub.org logo" src="/images/staticpages/logo_jshub_with_mark_home.png" />
-      </a>
+      <a id="logo" href="/" name="logo"><img src="/images/theme/logo_jshub_with_mark.png" alt=""></a>
     </div>
-    <div id="tagline">
-      <h3>
-        {{ page.tagline }}
-      </h3>
+    <div id="metanav" class="nav">
+      <ul>
+        <li>
+          <a href="#">Top navigation</a>
+        </li>
+        <li class="last">
+          <a href="#" title="Wiki Pages Change Notifications">If we need it?</a>
+        </li>
+      </ul>
     </div>
   </div>
 
-  <div id="action">
+  <div id="sitenav" class="nav">
+    <ul>
+      <li>
+        <a title="Back home" href="/">Home</a>
+      </li>
+      <li>
+        <a title="Configure a jsHub tag" href="/configurator/">Configurator</a>
+      </li>
+      <li class="active">
+        <a title="About" href="/about/">About</a>
+      </li>
+      <li class="last">
+        <a title="Blog" href="/blog/">Blog</a>
+      </li>
+    </ul>
   </div>
-  
-  <div id="main">
-
-    {{ content }}
-
+<div id="mainnav" class="nav"></div>
+<div id="main">
+  <div id="content" class="wiki">
+    <div class="wikipage searchable">
+      {{ content }}
+    </div>
   </div>
+</div>
+<div id="footer" lang="en" xml:lang="en">
+  <p>
+    <strong>jsHub.org</strong> | Copyright &copy; jsHub 2009 - see <a href="/legal/">Terms and conditions</a> for full details.
+  </p>
+</div>
 
-  <div id="footer">
-    <p>
-      <strong>jsHub.org</strong> | Copyright jsHub &copy; 2009 - see <a href="/legal/" title="Legals">Terms and conditions</a> for full details.
-    </p>
-  </div>
-  
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -50,6 +84,7 @@ try {
 var pageTracker = _gat._getTracker("UA-8152756-3");
 pageTracker._trackPageview();
 } catch(err) {}</script>
+
 
 </body>
 </html>
