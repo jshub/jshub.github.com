@@ -1,6 +1,6 @@
 auto: true
 exclude:
-- .git
-- Rakefile
-- Capfile
-- config
+ - .git
+ - Rakefile
+ - Capfile
+ - config
