@@ -1,10 +1,7 @@
 ---
 layout: static
 title: Tag Inspector
-breadcrumbs:
-  - [Projects](/projects/)
-  - [Inspector](/inspector)
----
+--- 
 
 
 # jsHub Tag Inspector #
