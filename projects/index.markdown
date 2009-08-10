@@ -3,6 +3,12 @@ layout: static
 title: jsHub Projects 
 ---
 
+<p class="path noprint">
+  <a class="pathentry" href="/">Home</a> 
+  <span class="pathentry sep">/</span>
+  <a class="pathentry" href="/projects">Projects</a> 
+  <br style="clear: both" />
+</p>
 
 # Projects #
 

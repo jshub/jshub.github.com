@@ -3,10 +3,18 @@ layout: static
 title: Tag Inspector
 --- 
 
+<p class="path noprint">
+  <a class="pathentry" href="/">Home</a> 
+  <span class="pathentry sep">/</span>
+  <a class="pathentry" href="/projects">Projects</a> 
+  <span class="pathentry sep">/</span>
+  <a class="pathentry" href="/projects/inspector">Inspector</a>
+  <br style="clear: both" />
+</p>
 
 # jsHub Tag Inspector #
 
-The Inspector provides a visual interface to the tag.
+The Inspector provides a d visual interface to the tag. spud
 
  * [See the Inspector in the demo store](/retail2/)
 
