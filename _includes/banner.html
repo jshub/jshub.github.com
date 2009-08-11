@@ -1,0 +1,40 @@
+<div id="banner-print">
+  <div>
+    <img src="/images/theme/jshub_logo_tiny_black.png" alt="" />
+  </div>
+</div>
+<div id="banner">
+  <div id="header">
+    <a id="logo" href="/" name="logo"><img src="/images/theme/logo_jshub_with_mark.png" alt=""></a>
+  </div>
+  <div id="metanav" class="nav">
+    <ul>
+      <li>
+        <a href="#">Top navigation</a>
+      </li>
+      <li class="last">
+        <a href="#" title="Wiki Pages Change Notifications">If we need it?</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div id="sitenav" class="nav">
+  <ul>
+    <li>
+      <a title="Back home" href="/">Home</a>
+    </li>
+    <li {% if page.layout == "projects" %} class="active" {% endif %}>
+      <a title="projects" href="/projects/">Projects</a>
+    </li>
+    <li>
+      <a title="Configure a jsHub tag" href="/configurator/">Configurator</a>
+    </li>
+    <li {% if page.layout == "about" %} class="active" {% endif %}>
+      <a title="About" href="/about/">About</a>
+    </li>
+    <li class="last">
+      <a title="Blog" href="/blog/">Blog</a>
+    </li>
+  </ul>
+</div>

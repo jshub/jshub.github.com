@@ -1,7 +1,16 @@
 ---
-layout: static
+layout: projects
 title: Metadata Markup Project 
 ---
+
+<p class="path noprint">
+  <a class="pathentry" href="/">Home</a> 
+  <span class="pathentry sep">/</span>
+  <a class="pathentry" href="/projects/">Projects</a> 
+  <span class="pathentry sep">/</span>
+  <a class="pathentry" href="/projects/markup/">Microformat markup</a> 
+  <br style="clear: both" />
+</p>
 
 
 # Proposal for a markup standard #

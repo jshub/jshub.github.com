@@ -1,7 +1,18 @@
 ---
-layout: static
+layout: projects
 title: Microformats Introduction 
 ---
+
+<p class="path noprint">
+  <a class="pathentry" href="/">Home</a> 
+  <span class="pathentry sep">/</span>
+  <a class="pathentry" href="/projects/">Projects</a> 
+  <span class="pathentry sep">/</span>
+  <a class="pathentry" href="/projects/markup/">Microformat markup</a> 
+  <span class="pathentry sep">/</span>
+  <a class="pathentry" href="/projects/markup/introduction.html">Introduction</a> 
+  <br style="clear: both" />
+</p>
 
 
 # Microformats for markup standards #
@@ -15,7 +26,7 @@ The specification has been drafted as an **html microformat** as there are a num
 The following sections supplement the actual [hPage specification](/hPage) by providing information about the microformat approach for those who may be more familiar with traditional JavaScript based methods for markup.
 
 
-##Microformats and page markup ##
+## Microformats and page markup ##
 
 The simplest way to collect user interaction data from websites is simply to record the URL of each page that is being viewed by the user. This is commonly achieved with a 'web beacon' or single pixel image placed on the page. When the browser requests the image from the server, the URL of the image is recorded, and the URL of the page that the image is embedded in is also recorded, inferred from the HTTP referrer field sent in the request. 
 

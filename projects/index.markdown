@@ -1,5 +1,5 @@
 ---
-layout: static
+layout: projects
 title: jsHub Projects 
 ---
 

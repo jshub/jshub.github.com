@@ -1,5 +1,5 @@
 ---
-layout: static
+layout: projects
 title: jsHub Tag 
 ---
 
@@ -81,6 +81,6 @@ These are extensively commented and provide a simple starting point for develope
 
 **If you want to contribute to the code,** you should start by [downloading](/download/) the developer bundle, or [fork the code on Github](https://github.com/jshub/jshub/tree/master).
 
-The developer application is a Ruby on Rails application that contains the code, the tests, and some scripts to run the tests from the command line. You can also see the [/core unit tests online], running from the same application.
+The developer application is a Ruby on Rails application that contains the code, the tests, and some scripts to run the tests from the command line. You can also see the [unit tests online](/core), running from the same application.
 
 Please send any feedback, bug reports or comments to <info@jshub.org> to get through to one of the team. Thanks!
