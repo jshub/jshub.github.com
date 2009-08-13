@@ -78,7 +78,7 @@ These are extensively commented and provide a simple starting point for develope
 
 # How can I contribute? #
 
-**If you want to contribute to the code,** you should start by [downloading](/download/) the developer bundle, or [fork the code on Github](https://github.com/jshub/jshub/tree/master).
+**If you want to contribute to the code,** you should start by [downloading](http://github.com/jshub/jshub-core/downloads/) the developer bundle, or [fork the code on Github](http://github.com/jshub/jshub-core/tree/master).
 
 The developer application is a Ruby on Rails application that contains the code, the tests, and some scripts to run the tests from the command line. You can also see the [unit tests online](/core/), running from the same application.
 
