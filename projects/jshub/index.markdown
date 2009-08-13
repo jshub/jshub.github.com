@@ -67,13 +67,13 @@ jsHub also comes with the [Tag Inspector](/projects/inspector/), which allows si
 The jsHub core hub provides a simple event based API for plugins to communicate with. A plugin simply needs to `bind` (subscribe to) the events that is it interested in, and `trigger` events that is has created.
 
 The jsHub project includes sample plugins for collecting data from the page, and for transmitting data to the server. There are currently five example plugins available. There are two plugins for reading markup on the page:
- * [hPage-plugin.js](https://github.com/jshub/jshub/blob/b4172aca9694fe671a9d5a51272db080b8f00f89/app/javascripts/data-capture/hPage-plugin.js), a reference implementation of the [hPage specification](/hPage/)
- * [google-analytics-markup-plugin.js](https://github.com/jshub/jshub/blob/b4172aca9694fe671a9d5a51272db080b8f00f89/app/javascripts/data-capture/google-analytics-markup-plugin.js), an illustration of how to collect information from existing markup contained in JS variables and function calls
+ * [hPage-plugin.js](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-capture/hPage-plugin.js), a reference implementation of the [hPage specification](/hPage/)
+ * [google-analytics-markup-plugin.js](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-capture/google-analytics-markup-plugin.js), an illustration of how to collect information from existing markup contained in JS variables and function calls
 
 There are three example data transport plugins:
- * [Mixpanel data transport plugin](https://github.com/jshub/jshub/blob/b4172aca9694fe671a9d5a51272db080b8f00f89/app/javascripts/data-transport/sample-get-plugin.js), which can send data to the [Mixpanel](http://mixpanel.com/) service. This plugin allows you to collect event data and report on it in Mixpanel.
- * [sample-get-plugin.js](https://github.com/jshub/jshub/blob/b4172aca9694fe671a9d5a51272db080b8f00f89/app/javascripts/data-transport/sample-get-plugin.js), a starting point for creating a plugin to send messages using a standard single pixel image
- * [sample-post-plugin.js](https://github.com/jshub/jshub/blob/b4172aca9694fe671a9d5a51272db080b8f00f89/app/javascripts/data-transport/sample-post-plugin.js), a starting point for creating a plugin to send messages by posting a form
+ * [Mixpanel data transport plugin](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-transport/sample-get-plugin.js), which can send data to the [Mixpanel](http://mixpanel.com/) service. This plugin allows you to collect event data and report on it in Mixpanel.
+ * [sample-get-plugin.js](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-transport/sample-get-plugin.js), a starting point for creating a plugin to send messages using a standard single pixel image
+ * [sample-post-plugin.js](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-transport/sample-post-plugin.js), a starting point for creating a plugin to send messages by posting a form
 
 These are extensively commented and provide a simple starting point for developers to begin creating plugins for other products.
 
