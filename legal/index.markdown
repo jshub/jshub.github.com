@@ -1,5 +1,5 @@
 ---
-layout: static
+layout: about
 title: Legal
 mainnav: about
 ---
