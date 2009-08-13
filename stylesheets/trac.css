@@ -243,6 +243,7 @@ label.disabled { color: #d7d7d7 }
 #metanav {
   position: relative;
   top: -105px;
+  height: 10px;
 }
 #metanav ul {
   font: normal 10px 'Tahoma',verdana,'Bitstream Vera Sans',helvetica,arial,sans-serif;
