@@ -42,68 +42,68 @@ Most web analytics products use JavaScript for marking up the metadata they requ
 
 For example, Google Analytics uses the approach of passing parameters to a function call, as per the [documentation](http://www.google.com/support/googleanalytics/bin/answer.py?answer=55528&topic=11002): 
 
-{% highlight js %}
-pageTracker._trackPageview();
+<pre class="brush: js;">
+    pageTracker._trackPageview();
 
-pageTracker._addTrans(
-  "1234",                                     // Order ID
-  "Mountain View",                            // Affiliation
-  "11.99",                                    // Total
-  "1.29",                                     // Tax
-  "5",                                        // Shipping
-  "San Jose",                                 // City
-  "California",                               // State
-  "USA"                                       // Country
-);
+    pageTracker._addTrans(
+      "1234",                                     // Order ID
+      "Mountain View",                            // Affiliation
+      "11.99",                                    // Total
+      "1.29",                                     // Tax
+      "5",                                        // Shipping
+      "San Jose",                                 // City
+      "California",                               // State
+      "USA"                                       // Country
+    );
 
-pageTracker._addItem(
-  "1234",                                     // Order ID
-  "DD44",                                     // SKU
-  "T-Shirt",                                  // Product Name 
-  "Green Medium",                             // Category
-  "11.99",                                    // Price
-  "1"                                         // Quantity
-);
+    pageTracker._addItem(
+      "1234",                                     // Order ID
+      "DD44",                                     // SKU
+      "T-Shirt",                                  // Product Name 
+      "Green Medium",                             // Category
+      "11.99",                                    // Price
+      "1"                                         // Quantity
+    );
 
-pageTracker._trackTrans();
-{% endhighlight %}
+    pageTracker._trackTrans();
+</pre>
 
 Omniture wrap this by defining a global object `s` and setting named properties on that object. 
 
 For example, here is the metadata from Omniture's [homepage](http://www.omniture.com/en/):
 
-{% highlight js %}
-/* PAGE SPECIFIC */
-s.pageName='Omniture: Homepage';
-s.channel='Home';
-s.prop6='English';
-{% endhighlight %}
+<pre class="brush: js;">
+    /* PAGE SPECIFIC */
+    s.pageName='Omniture: Homepage';
+    s.channel='Home';
+    s.prop6='English';
+</pre>
 
 Coremetrics also utilize the function parameters approach, for example as implemented on the [Bank of America homepage](https://www.bankofamerica.com/index.jsp):
 
-{% highlight js %}
-cmCreateRegistrationTag(null, 
-  'ngen-personal', 
-  '20090429:0:E:16CB099F-1520-01f4-00000000BFA6871D', 
-  false, 
-  null,
-  null,
-  'homepage');
-{% endhighlight %}
+<pre class="brush: js;">
+    cmCreateRegistrationTag(null, 
+      'ngen-personal', 
+      '20090429:0:E:16CB099F-1520-01f4-00000000BFA6871D', 
+      false, 
+      null,
+      null,
+      'homepage');
+</pre>
 
 The last parameter to this function call is equivalent to the Omniture SiteCatalyst variable `s.pageName` in the previous example. 
 
 WebTrends recommends the use of HTML `<meta>` tags but allow JavaScript variables to be used as well. They recommend this HTML:
 
-{% highlight html %}
-<META NAME="WT.pn" CONTENT="Homepage"> 
-{% endhighlight %}
+<pre class="brush: html;">
+    &lt;META NAME="WT.pn" CONTENT="Homepage"&gt;
+</pre>
 
 but this JavaScript is equivalent:
 
-{% highlight js %}
-WT.pn = "Homepage";
-{% endhighlight %}
+<pre class="brush: js;">
+    WT.pn = "Homepage";
+</pre>
 
 
 #### Pros and cons ####
@@ -122,18 +122,17 @@ The Semantic Web project attempts to publish information about the page (rather 
 
 The main standard for publishing this information is RDF, which is an XML syntax for publishing assertions about relations between things in the world. For example, the FOAF (Friend of a Friend) spec allows authors to publish a machine readable version of the 'blogroll' on their site, giving links to other blogs that they consider worth reading. There are some other well-known sets of assertions giving real world relations, in particular the Dublin Core assertions, used in this example from [the W3C RDF primer](http://www.w3.org/TR/rdf-primer):
 
-{% highlight xml %}
-<?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
-         xmlns:exterms="http://www.example.org/terms/">
-  <rdf:Description rdf:about="http://www.example.org/index.html">
-    <exterms:creation-date>August 16, 1999</exterms:creation-date>
-    <dc:language>en</dc:language>
-    <dc:creator rdf:resource="http://www.example.org/staffid/85740"/>
-  </rdf:Description>
-</rdf:RDF>
-{% endhighlight %}
+<pre class="brush: xml;">
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+             xmlns:dc="http://purl.org/dc/elements/1.1/"
+             xmlns:exterms="http://www.example.org/terms/">
+      <rdf:Description rdf:about="http://www.example.org/index.html">
+        <exterms:creation-date>August 16, 1999</exterms:creation-date>
+        <dc:language>en</dc:language>
+        <dc:creator rdf:resource="http://www.example.org/staffid/85740"/>
+      </rdf:Description>
+    </rdf:RDF>
+</pre>
 
 A challenge with RDF is that it can be a complex and unforgiving XML format, typically involving multiple namespaces and a lot of URIs. This means that while it is machine readable, the human readability can be poor, and for any non-developer it can be difficult to author manually. Currently there are few good tools for either reading or writing this information in common, mass market, use.
 
@@ -148,10 +147,10 @@ The approaches are highly complementary, and we hope that both RDFa and microfor
 ### HTML meta tags ###
 WebTrends utilizes two forms of markup. It's possible to register data using the JavaScript variables approach but also using HTML `<meta>` tags, as in this example from [WebTrends' solutions page](http://www.webtrends.com/solutions.aspx):
 
-{% highlight html %}
-<meta name="WT.cg_n" content="Solutions">
-<meta name="WT.pi" content="Solutions">
-{% endhighlight %}
+<pre class="brush: html;">
+    &lt;meta name="WT.cg_n" content="Solutions"&gt;
+    &lt;meta name="WT.pi" content="Solutions"&gt;
+</pre>
 
 Meta tags share many of the advantages of microformats in terms of being simple to edit, readily available to html authors, and with low risk of errors causing major issues with the page. Although they are in the page, they can sometimes form effectively a side channel because they are not part of the visible content of the page.
  
@@ -167,15 +166,15 @@ The microformats approach is a big improvement over metadata presented in JavaSc
 ### Microformats are human readable ###
 Microformats are designed to be read by humans first and machines second. Any author who has used HTML will be able to scan a microformat and get some understanding of the data conveyed. 
 
-{% highlight html %}
-<div class="hpage">
-  <ul>
-    <li class="name">Microformat examples</li>
-    <li class="title">Microformat blog: Microformat examples</li>
-    <li class="type">Article</li>
-  </ul>
-</div>
-{% endhighlight %}
+<pre class="brush: html;">
+    <div class="hpage">
+      <ul>
+        <li class="name">Microformat examples</li>
+        <li class="title">Microformat blog: Microformat examples</li>
+        <li class="type">Article</li>
+      </ul>
+    </div>
+</pre>
 
 Contrast this with the JavaScript approach where the data is held within code. 
 

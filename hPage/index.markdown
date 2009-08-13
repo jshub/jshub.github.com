@@ -118,16 +118,16 @@ The property class names may be applied to any HTML element, but follow the [Sem
 
 ### Examples ###
 The smallest hPage that is valid contains only one required field, the page name:
-{% highlight html %}
-<div class="hpage">
-  <span class="name">Homepage</span>
-</div>
-{% endhighlight %}
+<pre class="brush: html;">
+    <div class="hpage">
+      <span class="name">Homepage</span>
+    </div>
+</pre>
 
 Note that the class names *hpage* and *name* may be applied to any (valid and semantically correct) html elements, for example `div`, `span` or `p`.
 
 A more complete example would be:
-{% highlight html %}
+<pre class="brush: html;">
 <div class="hpage">
   <ul>
     <li class="name">Microformat examples</li>
@@ -136,7 +136,7 @@ A more complete example would be:
     <li class="category">microformat spec web html</li>
   </ul>
 </div>
-{% endhighlight %}
+</pre>
 
 
 ## Design Principles ##
@@ -151,19 +151,19 @@ This microformat utilises the Microformats.org [key principles](http://microform
 We make one amendment to these principles, which is to state that hidden metadata is acceptable. The general principle is that "*visible data* is much better for humans than *invisible metadata*". 
 
 Where the data forms part of the content that the author wishes to show to the user, then it should be displayed. 
-{% highlight html %}
+<pre class="brush: html;">
 <div class="hpage">
   <span class="name" style="display: none">hPage Specification</span>
 </div>
-{% endhighlight %}
+</pre>
 
   
 
-{% highlight html %}
+<pre class="brush: html;">
 <div class="hpage">
   <h1 class="name">hPage Specification</h1>
 </div>
-{% endhighlight %}
+</pre>
 
 These examples are equivalent, but the second form is preferred because the data is visible (it forms the page heading), and so more likely to be well maintained.
 
@@ -185,7 +185,7 @@ In this case, the page may contain multiple instances of hPage. Parsers *must* t
 
 ### Composition ###
 This simple hPage:
-{% highlight html %}
+<pre class="brush: html;">
 <div class="hpage">
   <ul>
     <li class="name">Microformat examples</li>
@@ -193,67 +193,67 @@ This simple hPage:
     <li class="category">microformat spec web html</li>
   </ul>
 </div>
-{% endhighlight %}
+</pre>
 
 may equally be represented in multiple hPage declarations. For example, it may be simpler to construct the hPage in two separate regions, if the category data is held in a separate component on the server. 
 
 This representation is equivalent to the previous one, because there is no conflict in the data between the declarations:
-{% highlight html %}
-<div class="hpage">
-  <ul>
-    <li class="name">Microformat examples</li>
-    <li class="title">Microformat blog: Microformat examples</li>
-  </ul>
-</div>
+<pre class="brush: html;">
+    <div class="hpage">
+      <ul>
+        <li class="name">Microformat examples</li>
+        <li class="title">Microformat blog: Microformat examples</li>
+      </ul>
+    </div>
 
-... more text ...
+    ... more text ...
 
-<div class="hpage">
-  <ul>
-    <li class="category">microformat spec web html</li>
-  </ul>
-</div>
-{% endhighlight %}
+    <div class="hpage">
+      <ul>
+        <li class="category">microformat spec web html</li>
+      </ul>
+    </div>
+</pre>
 
 ### Overriding of singular values ###
 Where a property takes a *singular* value, such as the page name, then later values overwrite the previous declaration. This code is also equivalent to the previous example:
-{% highlight html %}
-<div class="hpage">
-  <ul>
-    <li class="name">Initial page name, will be overwritten</li>
-    <li class="title">Microformat blog: Microformat examples</li>
-  </ul>
-</div>
+<pre class="brush: html;">
+    <div class="hpage">
+      <ul>
+        <li class="name">Initial page name, will be overwritten</li>
+        <li class="title">Microformat blog: Microformat examples</li>
+      </ul>
+    </div>
 
-... more text ...
+    ... more text ...
 
-<div class="hpage">
-  <ul>
-    <li class="name">Microformat examples</li>
-    <li class="category">microformat spec web html</li>
-  </ul>
-</div>
-{% endhighlight %}
+    <div class="hpage">
+      <ul>
+        <li class="name">Microformat examples</li>
+        <li class="category">microformat spec web html</li>
+      </ul>
+    </div>
+</pre>
 
 ### Additivity of multiple values ###
 For properties that take multiple values, then later values are appended to the previous values, so the following is also equivalent to all the previous examples in this section:
-{% highlight html %}
-<div class="hpage">
-  <ul>
-    <li class="name">Microformat examples</li>
-    <li class="title">Microformat blog: Microformat examples</li>
-    <li class="category">microformat spec</li>
-  </ul>
-</div>
+<pre class="brush: html;">
+    <div class="hpage">
+      <ul>
+        <li class="name">Microformat examples</li>
+        <li class="title">Microformat blog: Microformat examples</li>
+        <li class="category">microformat spec</li>
+      </ul>
+    </div>
 
-... more text ...
+    ... more text ...
 
-<div class="hpage">
-  <ul>
-    <li class="category">web html</li>
-  </ul>
-</div>
-{% endhighlight %}
+    <div class="hpage">
+      <ul>
+        <li class="category">web html</li>
+      </ul>
+    </div>
+</pre>
 
 ## Multiple pages of content in a single HTML document ##
 Some documents may include more than one *page of content*, where not all of the content in the document is visible to the user when the page is first loaded. A common example is a tabbed page layout, where much of the content is hidden until a navigation element is clicked. This produces an effect similar to navigating between separate HTML documents in an HTML frames layout.
@@ -265,41 +265,41 @@ Example of a tabbed page. Clicking a tab (1b) causes new content to replace the 
 
 In this case, the page author may indicate that the content for each tab represents a separate page of content. Each tab (specifically, each node wrapping the content for a tab) will contain one or more hPage elements. When the page is first loaded, only the hPage(s) contained within the visible content will be examined by the parser. The other tabs are marked as `hidden-on-load` and ignored by the parser.
 
-{% highlight html %}
-<p> In this example there are 3 hPages but only 1 is visible at a time to a user.</p>
-<ul class="tab-navigation">
-  <li class="tab-nav selected">
-    <a href="#tab-1">Tab 1</a>
-  </li>
-  <li class="tab-nav unselected">
-    <a href="#tab-2">Tab 2</a>
-  </li>
-  <li class="tab-nav unselected">
-    <a href="#tab-3">Tab 3</a>
-  </li>
-</ul>
-<div id="tab-1" class="hpage tab selected">
-  <h2 class="name">Tab One</h2>
-  <p>
-    Content for the primary tab, which is initially visible.
-    This hPage is parsed when the page first loads.
-  </p>
-</div>
-<div id="tab-2" class="hpage tab unselected">
-  <h2 class="name">Tab Two</h2>
-  <span class="hidden-on-load">true</span>
-  <p>
-    Hidden tab not parsed on first page load. 
-  </p>
-</div>
-<div id="tab-3" class="hpage tab unselected">
-  <h2 class="name">Tab Three</h2>
-  <span class="hidden-on-load">true</span>
-  <p>
-    Content for tab three.
-  </p>
-</div>
-{% endhighlight %}
+<pre class="brush: html;">
+    <p> In this example there are 3 hPages but only 1 is visible at a time to a user.</p>
+    <ul class="tab-navigation">
+      <li class="tab-nav selected">
+        <a href="#tab-1">Tab 1</a>
+      </li>
+      <li class="tab-nav unselected">
+        <a href="#tab-2">Tab 2</a>
+      </li>
+      <li class="tab-nav unselected">
+        <a href="#tab-3">Tab 3</a>
+      </li>
+    </ul>
+    <div id="tab-1" class="hpage tab selected">
+      <h2 class="name">Tab One</h2>
+      <p>
+        Content for the primary tab, which is initially visible.
+        This hPage is parsed when the page first loads.
+      </p>
+    </div>
+    <div id="tab-2" class="hpage tab unselected">
+      <h2 class="name">Tab Two</h2>
+      <span class="hidden-on-load">true</span>
+      <p>
+        Hidden tab not parsed on first page load. 
+      </p>
+    </div>
+    <div id="tab-3" class="hpage tab unselected">
+      <h2 class="name">Tab Three</h2>
+      <span class="hidden-on-load">true</span>
+      <p>
+        Content for tab three.
+      </p>
+    </div>
+</pre>
 
 <div markdown="1" class="caption">
 Example HTML for a tabbed page.  
@@ -355,32 +355,32 @@ Mixed content within a page.
 </div>
 
 This example might be represented with:
-{% highlight html %}
-<div class="hpage">
-  <ul>
-    <li class="name">Microformat example</li>
-    <li class="title">Page title</li>
-  </ul>
-</div>
+<pre class="brush: html;">
+    <div class="hpage">
+      <ul>
+        <li class="name">Microformat example</li>
+        <li class="title">Page title</li>
+      </ul>
+    </div>
 
-... static page content ...
+    ... static page content ...
 
-<div class="hpage">
-  <ul class="content">
-    <li class="id">324567635</li>
-    <li class="group">The Geek Atlas</li>
-    <li class="slot">top right</li>
-  </ul>
-  ... dynamic content ... 
+    <div class="hpage">
+      <ul class="content">
+        <li class="id">324567635</li>
+        <li class="group">The Geek Atlas</li>
+        <li class="slot">top right</li>
+      </ul>
+      ... dynamic content ... 
 
-  <ul class="content">
-    <li class="id">475638765</li>
-    <li class="group">Google ad</li>
-    <li class="slot">bottom right</li>
-  </ul>
-  ... dynamic content ... 
-</div>
-{% endhighlight %}
+      <ul class="content">
+        <li class="id">475638765</li>
+        <li class="group">Google ad</li>
+        <li class="slot">bottom right</li>
+      </ul>
+      ... dynamic content ... 
+    </div>
+</pre>
 
 It will not normally be necessary to mark the static content (i.e. content which is always shown on the same page name) as a content fragment, because it can be inferred from the page name. 
 
@@ -407,15 +407,15 @@ The enumeration of types is not exhaustive and page authors are free to define t
 **The enumeration of "well known page types" is under discussion, and does not yet form part of this specification.**
 
 One possible example of a well known page type might be for error pages, allowing error pages across all sites to be marked in a consistent way:
-{% highlight html %}
-<body class="hpage">
-  <h1 class="name">Page not found</h1>
-  <a class="type" rel="tag" href="http://www.jshub.org/hpage/types/404">Not Found Error</a>
-  <p>The page you requested was not found on this server. 
-    Please try the <a href="/">homepage</a>.
-  </p>
-</body>
-{% endhighlight %}
+<pre class="brush: html;">
+    <body class="hpage">
+      <h1 class="name">Page not found</h1>
+      <a class="type" rel="tag" href="http://www.jshub.org/hpage/types/404">Not Found Error</a>
+      <p>The page you requested was not found on this server. 
+        Please try the <a href="/">homepage</a>.
+      </p>
+    </body>
+</pre>
 
 
 ## Page categories as tags ##
@@ -442,11 +442,11 @@ The value of each property is, in general, the inner text (including embedded ht
 ### Simple values ###
 For all textual properties (all hPage properties except for `attribute`), if the element is a non-empty html element, the parser *must* use the full inner html of the element as the value of the property. 
 
-{% highlight html %}
-<div class="hpage">
-  Page name is <span class="name">hPage examples</span>.
-</div>
-{% endhighlight %}
+<pre class="brush: html;">
+    <div class="hpage">
+      Page name is <span class="name">hPage examples</span>.
+    </div>
+</pre>
 
 The page name is "hPage examples".
 
@@ -455,42 +455,42 @@ The page name is "hPage examples".
 #### Whitespace ####
 Whitespace is trimmed from the start and end of any values. Whitespace within a value string is normalized as per the rules of HTML, i.e. any sequence of spaces, tabs and newline characters is replaced with a single space.
 
-{% highlight html %}
-<div class="hpage">
-  Note additional whitespace in source code:
-  <ul>
-    <li>page name is 
-       <span class="name">
-	           page name 
-	           with newlines
-       </span>
-    </li>
-  </ul>
-</div>
-{% endhighlight %}
+<pre class="brush: html;">
+    <div class="hpage">
+      Note additional whitespace in source code:
+      <ul>
+        <li>page name is 
+           <span class="name">
+    	           page name 
+    	           with newlines
+           </span>
+        </li>
+      </ul>
+    </div>
+</pre>
 
 is equivalent to:
-{% highlight html %}
-<div class="hpage">
-  <ul>
-    <li class="name">page name with newlines</li>
-  </ul>
-</div>
-{% endhighlight %}
+<pre class="brush: html;">
+    <div class="hpage">
+      <ul>
+        <li class="name">page name with newlines</li>
+      </ul>
+    </div>
+</pre>
 
 #### Embedded html ####
 Any embedded html is retained by the parser as part of the property value.
 
-{% highlight html %}
-<div class="hpage">
-  Additional HTML in source code:
-  <ul>
-    <li>page name is
-       <span class="name">page name with an <a href="test.html">embedded link</a></span>.
-    </li>
-  </ul>
-</div>
-{% endhighlight %}
+<pre class="brush: html;">
+    <div class="hpage">
+      Additional HTML in source code:
+      <ul>
+        <li>page name is
+           <span class="name">page name with an <a href="test.html">embedded link</a></span>.
+        </li>
+      </ul>
+    </div>
+</pre>
 
 The value of page name is `page name with an <a href="test.html">embedded link</a>`.
 
@@ -498,85 +498,85 @@ The value of page name is `page name with an <a href="test.html">embedded link</
 In the case of the `attribute` property, the property has two fields, a type and a value. For this purpose, the special class name `value` is used to contain the subset of the element that is the value of the property. This is the "value class pattern", which is a special case of the normal rule where the whole of the element's content would be treated as the value. 
 
 These examples are equivalent:
-{% highlight html %}
-<span class="attribute">
-  <span class="type">discount</span>:
-  <span class="value">10%</span>
-</span>
-{% endhighlight %}
+<pre class="brush: html;">
+    <span class="attribute">
+      <span class="type">discount</span>:
+      <span class="value">10%</span>
+    </span>
+</pre>
 
-{% highlight html %}
-<span class="attribute">
-  <p>Your <span class="type">discount</span>:of <span class="value">10%</span> has been applied</p>
-</span>
-{% endhighlight %}
+<pre class="brush: html;">
+    <span class="attribute">
+      <p>Your <span class="type">discount</span>:of <span class="value">10%</span> has been applied</p>
+    </span>
+</pre>
 
 If the `value` is not present, then there is an implicit value of "true". If neither `type` nor `value` are specified, then the type is taken to be the full content of the `attribute` node, with an implicit value of "true". So these examples are equivalent:
-{% highlight html %}
-<span class="attribute">
-  <span class="type">discount</span>:
-  <!-- implicit value = true -->
-</span>
-{% endhighlight %}
+<pre class="brush: html;">
+    <span class="attribute">
+      <span class="type">discount</span>:
+      <!-- implicit value = true -->
+    </span>
+</pre>
 
-{% highlight html %}
-<span class="attribute">discount</span>
-<!-- implicit value = true -->
-{% endhighlight %}
+<pre class="brush: html;">
+    <span class="attribute">discount</span>
+    <!-- implicit value = true -->
+</pre>
 
 If the `value` is specified, but no `type`, then the attribute is invalid, and is ignored by the parser:
-{% highlight html %}
-<span class="attribute">
-  <span class="value">10</span>:
-  <!-- invalid, no attribute type to apply the value to  -->
-</span>
-{% endhighlight %}
+<pre class="brush: html;">
+    <span class="attribute">
+      <span class="value">10</span>:
+      <!-- invalid, no attribute type to apply the value to  -->
+    </span>
+</pre>
 
 
 ### Properties with multiple values ###
 The properties `category` and `type` take multiple, white-space separated values.
-{% highlight html %}
-  <div class="hpage">
-    <ul>
-      <li>Page categories:
-        <span class="category">microformat spec web html web+analytics</span>
-      </li>
-    </ul>
-  </div>
-{% endhighlight %}
+<pre class="brush: html;">
+    <div class="hpage">
+      <ul>
+        <li>Page categories:
+          <span class="category">microformat spec web html web+analytics</span>
+        </li>
+      </ul>
+    </div>
+</pre>
 
 is equivalent to:
-{% highlight html %}
-  <div class="hpage">
-    <ul>
-      <li>Page categories:
-        <span class="category">microformat</span>
-        <span class="category">spec</span>
-        <span class="category">web</span>
-        <span class="category">html</span>
-        <span class="category">web analytics</span>
-      </li>
-    </ul>
-  </div>
-{% endhighlight %}
+<pre class="brush: html;">
+    <div class="hpage">
+      <ul>
+        <li>Page categories:
+          <span class="category">microformat</span>
+          <span class="category">spec</span>
+          <span class="category">web</span>
+          <span class="category">html</span>
+          <span class="category">web analytics</span>
+        </li>
+      </ul>
+    </div>
+</pre>
 
 ### Use of rel-tag ###
 The properties `category` and `type` can also be specified using [rel-tag](http://microformats.org/wiki/rel-tag), and this approach is recommended.
 
 This example provides greater information than the opaque text labels of the previous examples.
-{% highlight html %}
-  <div class="hpage">
-    <ul>
-      <li>Page categories:
-        <a class="category" rel="tag" href="http://www.example.com/tags/microformat">microformat</a>
-        <a class="category" rel="tag" href="http://www.example.com/tags/spec">spec</a>
-        <a class="category" rel="tag" href="http://www.example.com/tags/web">web</a>
-        <a class="category" rel="tag" href="http://www.example.com/tags/html">html</a>
-        <a class="category" rel="tag" href="http://www.example.com/tags/web+analytics">web analytics</a>
-      </li>
-    </ul>
-  </div>
-{% endhighlight %}
+<pre class="brush: html;">
+    <div class="hpage">
+      <ul>
+        <li>Page categories:
+          <a class="category" rel="tag" href="http://www.example.com/tags/microformat">microformat</a>
+          <a class="category" rel="tag" href="http://www.example.com/tags/spec">spec</a>
+          <a class="category" rel="tag" href="http://www.example.com/tags/web">web</a>
+          <a class="category" rel="tag" href="http://www.example.com/tags/html">html</a>
+          <a class="category" rel="tag" href="http://www.example.com/tags/web+analytics">web analytics</a>
+        </li>
+      </ul>
+    </div>
+</pre>
 
 The value of the category is the last path component of each URL, as specified by the rel-tag microformat. For example, the first category in this example is `microformat` and has a *tagspace* of `http://www.example.com/tags`.
 
@@ -597,35 +597,35 @@ The following examples demonstrate some possible errors in hPage markup and how 
 
 ### Missing required fields ###
 The hPage specification requires the *name* property which represents the page name. This example does not contain that:
-{% highlight html %}
-<div class="hpage">
-  No hPage properties are set:
-  <ul>
-    <li>page name: required field, not present</li>
-  </ul>
-</div>
-{% endhighlight %}
+<pre class="brush: html;">
+    <div class="hpage">
+      No hPage properties are set:
+      <ul>
+        <li>page name: required field, not present</li>
+      </ul>
+    </div>
+</pre>
 
 This is not a valid hPage and will not trigger a page view in the parser.
 
 ### Composition example with missing fields ###
-{% highlight html %}
-<div class="hpage">
-  <ul>
-    <li class="name">Homepage</li>
-  </ul>
-</div>
+<pre class="brush: html;">
+    <div class="hpage">
+      <ul>
+        <li class="name">Homepage</li>
+      </ul>
+    </div>
 
-... some other text ... 
+    ... some other text ... 
 
-<div class="hpage">
-  No hPage properties are set:
-  <ul>
-    <li>page-name: required field, not present</li>
-    <li class="category">microformats</li>
-  </ul>
-</div>
-{% endhighlight %}
+    <div class="hpage">
+      No hPage properties are set:
+      <ul>
+        <li>page-name: required field, not present</li>
+        <li class="category">microformats</li>
+      </ul>
+    </div>
+</pre>
 
 The second hPage declaration in this document is not valid on its own. However because there is a previously declared hPage instance, the second instance supplements the information according to the composition rules.
 
