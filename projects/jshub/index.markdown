@@ -70,8 +70,7 @@ The jsHub project includes sample plugins for collecting data from the page, and
  * [hPage-plugin.js](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-capture/hPage-plugin.js), a reference implementation of the [hPage specification](/hPage/)
  * [google-analytics-markup-plugin.js](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-capture/google-analytics-markup-plugin.js), an illustration of how to collect information from existing markup contained in JS variables and function calls
 
-There are three example data transport plugins:
- * [Mixpanel data transport plugin](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-transport/sample-get-plugin.js), which can send data to the [Mixpanel](http://mixpanel.com/) service. This plugin allows you to collect event data and report on it in Mixpanel.
+There are two example data transport plugins:
  * [sample-get-plugin.js](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-transport/sample-get-plugin.js), a starting point for creating a plugin to send messages using a standard single pixel image
  * [sample-post-plugin.js](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-transport/sample-post-plugin.js), a starting point for creating a plugin to send messages by posting a form
 
