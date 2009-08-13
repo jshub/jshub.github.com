@@ -13,9 +13,10 @@ body, th, td {
  color: #404040;
 }
 h1, h2, h3, h4 {
-  font-family: 'Helvetica Neue', Helvetica, Verdana, Geneva, Arial, sans-serif;
-  font-style: normal;
-  font-weight: lighter;
+ font-family: 'Georgia',Arial,Verdana,'Bitstream Vera Sans',Helvetica,sans-serif;
+ font-weight: bold;
+ font-style: italic;
+ letter-spacing: -0.018em;
  page-break-after: avoid;
 }
 h1 { 
