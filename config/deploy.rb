@@ -48,8 +48,7 @@ namespace :custom do
   desc 'reado symlinks in the web root.'
   task :link_webroot do
     run "ln -nfs /var/capistrano/git/current/public #{webroot}/git"
-    run "ln -nfs /var/capistrano/akita-on-rails/current/public #{webroot}/akita-on-rails"
-    run "ln -nfs /var/capistrano/akita-on-rails/current/public #{webroot}/core"
+    run "ln -nfs /var/capistrano/core/current/public #{webroot}/core"
     run "ln -nfs /var/capistrano/ui/current/public #{webroot}/ui"
     run "ln -nfs /var/capistrano/configurator/current/public #{webroot}/configurator"
     run "ln -nfs /var/capistrano/retail2/current/public #{webroot}/retail2"
