@@ -6,7 +6,7 @@ tagline: A new approach to tagging
 
 Do you have web analytics on your site? Perhaps a product recommendations engine? Or an A/B testing tool? 
 
-So why do they all they need the same data, but separately and in their own format?
+So why do they all they need the same data, but collected separately and each in their own format?
 
 # A new approach #
 
