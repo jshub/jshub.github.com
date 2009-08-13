@@ -798,3 +798,11 @@ h1 *.pathentry { font-size: 14px; }
   overflow: hidden;
 }
 
+/* Custom style for image captions */
+div.caption {
+  padding-left: 2em;
+  padding-right: 2em;
+  font-style: italic;
+}
+
+
