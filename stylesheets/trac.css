@@ -250,7 +250,7 @@ label.disabled { color: #d7d7d7 }
   color: #000;
 }
 #metanav li {
-  border-right: 1px solid #000;
+  /* border-right: 1px solid #000; */
 }
 #metanav li.first {
   color: #688218;
