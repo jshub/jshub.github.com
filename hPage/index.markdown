@@ -128,14 +128,14 @@ Note that the class names *hpage* and *name* may be applied to any (valid and se
 
 A more complete example would be:
 <pre class="brush: html;">
-<div class="hpage">
-  <ul>
-    <li class="name">Microformat examples</li>
-    <li class="title">Microformat blog: Microformat examples</li>
-    <li class="type">Article</li>
-    <li class="category">microformat spec web html</li>
-  </ul>
-</div>
+    <div class="hpage">
+      <ul>
+        <li class="name">Microformat examples</li>
+        <li class="title">Microformat blog: Microformat examples</li>
+        <li class="type">Article</li>
+        <li class="category">microformat spec web html</li>
+      </ul>
+    </div>
 </pre>
 
 
@@ -152,17 +152,15 @@ We make one amendment to these principles, which is to state that hidden metadat
 
 Where the data forms part of the content that the author wishes to show to the user, then it should be displayed. 
 <pre class="brush: html;">
-<div class="hpage">
-  <span class="name" style="display: none">hPage Specification</span>
-</div>
+    <div class="hpage">
+      <span class="name" style="display: none">hPage Specification</span>
+    </div>
 </pre>
 
-  
-
 <pre class="brush: html;">
-<div class="hpage">
-  <h1 class="name">hPage Specification</h1>
-</div>
+    <div class="hpage">
+      <h1 class="name">hPage Specification</h1>
+    </div>
 </pre>
 
 These examples are equivalent, but the second form is preferred because the data is visible (it forms the page heading), and so more likely to be well maintained.
@@ -186,18 +184,19 @@ In this case, the page may contain multiple instances of hPage. Parsers *must* t
 ### Composition ###
 This simple hPage:
 <pre class="brush: html;">
-<div class="hpage">
-  <ul>
-    <li class="name">Microformat examples</li>
-    <li class="title">Microformat blog: Microformat examples</li>
-    <li class="category">microformat spec web html</li>
-  </ul>
-</div>
+    <div class="hpage">
+      <ul>
+        <li class="name">Microformat examples</li>
+        <li class="title">Microformat blog: Microformat examples</li>
+        <li class="category">microformat spec web html</li>
+      </ul>
+    </div>
 </pre>
 
 may equally be represented in multiple hPage declarations. For example, it may be simpler to construct the hPage in two separate regions, if the category data is held in a separate component on the server. 
 
 This representation is equivalent to the previous one, because there is no conflict in the data between the declarations:
+
 <pre class="brush: html;">
     <div class="hpage">
       <ul>
@@ -217,6 +216,7 @@ This representation is equivalent to the previous one, because there is no confl
 
 ### Overriding of singular values ###
 Where a property takes a *singular* value, such as the page name, then later values overwrite the previous declaration. This code is also equivalent to the previous example:
+
 <pre class="brush: html;">
     <div class="hpage">
       <ul>
@@ -237,6 +237,7 @@ Where a property takes a *singular* value, such as the page name, then later val
 
 ### Additivity of multiple values ###
 For properties that take multiple values, then later values are appended to the previous values, so the following is also equivalent to all the previous examples in this section:
+
 <pre class="brush: html;">
     <div class="hpage">
       <ul>
@@ -355,6 +356,7 @@ Mixed content within a page.
 </div>
 
 This example might be represented with:
+
 <pre class="brush: html;">
     <div class="hpage">
       <ul>
@@ -407,6 +409,7 @@ The enumeration of types is not exhaustive and page authors are free to define t
 **The enumeration of "well known page types" is under discussion, and does not yet form part of this specification.**
 
 One possible example of a well known page type might be for error pages, allowing error pages across all sites to be marked in a consistent way:
+
 <pre class="brush: html;">
     <body class="hpage">
       <h1 class="name">Page not found</h1>
@@ -470,6 +473,7 @@ Whitespace is trimmed from the start and end of any values. Whitespace within a 
 </pre>
 
 is equivalent to:
+
 <pre class="brush: html;">
     <div class="hpage">
       <ul>
@@ -498,6 +502,7 @@ The value of page name is `page name with an <a href="test.html">embedded link</
 In the case of the `attribute` property, the property has two fields, a type and a value. For this purpose, the special class name `value` is used to contain the subset of the element that is the value of the property. This is the "value class pattern", which is a special case of the normal rule where the whole of the element's content would be treated as the value. 
 
 These examples are equivalent:
+
 <pre class="brush: html;">
     <span class="attribute">
       <span class="type">discount</span>:
@@ -512,6 +517,7 @@ These examples are equivalent:
 </pre>
 
 If the `value` is not present, then there is an implicit value of "true". If neither `type` nor `value` are specified, then the type is taken to be the full content of the `attribute` node, with an implicit value of "true". So these examples are equivalent:
+
 <pre class="brush: html;">
     <span class="attribute">
       <span class="type">discount</span>:
@@ -525,6 +531,7 @@ If the `value` is not present, then there is an implicit value of "true". If nei
 </pre>
 
 If the `value` is specified, but no `type`, then the attribute is invalid, and is ignored by the parser:
+
 <pre class="brush: html;">
     <span class="attribute">
       <span class="value">10</span>:
@@ -535,6 +542,7 @@ If the `value` is specified, but no `type`, then the attribute is invalid, and i
 
 ### Properties with multiple values ###
 The properties `category` and `type` take multiple, white-space separated values.
+
 <pre class="brush: html;">
     <div class="hpage">
       <ul>
@@ -546,6 +554,7 @@ The properties `category` and `type` take multiple, white-space separated values
 </pre>
 
 is equivalent to:
+
 <pre class="brush: html;">
     <div class="hpage">
       <ul>
@@ -564,6 +573,7 @@ is equivalent to:
 The properties `category` and `type` can also be specified using [rel-tag](http://microformats.org/wiki/rel-tag), and this approach is recommended.
 
 This example provides greater information than the opaque text labels of the previous examples.
+
 <pre class="brush: html;">
     <div class="hpage">
       <ul>
@@ -597,6 +607,7 @@ The following examples demonstrate some possible errors in hPage markup and how 
 
 ### Missing required fields ###
 The hPage specification requires the *name* property which represents the page name. This example does not contain that:
+
 <pre class="brush: html;">
     <div class="hpage">
       No hPage properties are set:
@@ -609,6 +620,7 @@ The hPage specification requires the *name* property which represents the page n
 This is not a valid hPage and will not trigger a page view in the parser.
 
 ### Composition example with missing fields ###
+
 <pre class="brush: html;">
     <div class="hpage">
       <ul>
