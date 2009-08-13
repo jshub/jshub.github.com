@@ -203,7 +203,7 @@ label.disabled { color: #d7d7d7 }
 /* Sitewide navigation bar */
 #sitenav {
   position: relative;
-  top: -68px;
+  top: -64px;
 }
 #sitenav ul { 
   text-align: center; 
