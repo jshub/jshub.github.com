@@ -12,7 +12,7 @@ title: Enterprises
 
 # How does jsHub help the enterprise? #
 
-The average enterprise website contains more than one JavaScript data collection on the homepage, and sometimes many more on landing pages deeper in the site.
+The average enterprise website contains more than one JavaScript data collection tag on the homepage, and sometimes many more on landing pages deeper in the site.
 
 Each of these tags represents **redundant, duplicate data**. And each instance of duplicate data is both wasted effort from the team maintaining the page, and another place where data that should be identical may get out of synch.
 
