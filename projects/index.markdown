@@ -6,19 +6,19 @@ title: jsHub Projects
 <p class="path noprint">
   <a class="pathentry" href="/">Home</a> 
   <span class="pathentry sep">/</span>
-  <a class="pathentry" href="/projects">Projects</a> 
+  <a class="pathentry" href="/projects/">Projects</a> 
   <br style="clear: both" />
 </p>
 
 # Projects #
 
 ## jsHub tag ##
-The jsHub tag project consists of a JavaScript tag, with associated tools and documentation. The tag has a flexible plug-in architecture. The jsHub project will supply a core set of plugins, including a plug-in that can read [hPage](/hPage) and other standard microformats. 
+The jsHub tag project consists of a JavaScript tag, with associated tools and documentation. The tag has a flexible plug-in architecture. The jsHub project will supply a core set of plugins, including a plug-in that can read [hPage](/hPage/) and other standard microformats. 
 
 Vendors can also supply plugins to read their own markup. If a plugin is available to read the markup on your pages, then you can begin using the jsHub tag immediately. The tag and the markup are independent and each can be deployed on their own without the other.
 
  * [jsHub tag project page](/projects/jshub/)
- * [Configure a tag to use on your site](/configurator)
+ * [Configure a tag to use on your site](/configurator/)
 
 ## Microformat markup specifications ##
 

@@ -17,7 +17,7 @@ title: Metadata Markup Project
 
 jsHub proposes a new syntax for declaring data about the page that a user is viewing. The new syntax is based on HTML microformats, and declares the data in the HTML of the page, rather than in JavaScript variables.
 
-The new markup standard we're proposing is captured in our [hPage draft specification](/hPage).
+The new markup standard we're proposing is captured in our [hPage draft specification](/hPage/).
 
 If you're new to microformats you may also want to read our [introduction to microformat markup](introduction.html).
 
