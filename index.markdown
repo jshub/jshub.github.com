@@ -14,7 +14,7 @@ jsHub is all about standards. We believe it's your data. And if you have declare
 
 ## Developers ##
 
-[Fork the code](https://github.com/jshub/jshub/tree/master) and see how to build and test a plugin for our JavaScript tag code. [You'll be hooked](/projects/).
+[Fork the code](https://github.com/jshub/jshub-core/tree/master) and see how to build and test a plugin for our JavaScript tag code. [You'll be hooked](/projects/).
 
 ## Site owners ##
 
