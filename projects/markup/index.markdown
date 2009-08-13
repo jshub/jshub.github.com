@@ -19,7 +19,7 @@ jsHub proposes a new syntax for declaring data about the page that a user is vie
 
 The new markup standard we're proposing is captured in our [hPage draft specification](/hPage).
 
-If you're new to microformats you may also want to read our [introduction to microformat markup](./introduction.html).
+If you're new to microformats you may also want to read our [introduction to microformat markup](introduction.html).
 
 ## Why HTML microformats? ##
 HTML microformats are a set of simple design principles for marking up information semantically. Microformats use well known class names on HTML elements to tell the software parsing the page what the data in the page means. Microformats avoid the use of non-HTML markup (e.g. XML), providing a very low barrier to entry for page authors to include the markup in their content.
