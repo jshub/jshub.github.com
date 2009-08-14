@@ -50,14 +50,14 @@ namespace :deploy do
   end
 end
 
+output_location = "/var/jshub/htdocs/"
 
-# Custom
 namespace :custom do
 
   desc "Generate website in the webroot with Jekyll"
   task :website do
     puts "Generating website"
-    run "cd #{current_path} && jekyll --no-auto /var/jshub/htdocs/"
+    run "cd #{current_path} && jekyll --no-auto #{output_location}"
   end
   
   desc 'reado symlinks in the web root.'
