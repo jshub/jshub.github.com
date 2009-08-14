@@ -5,7 +5,7 @@ mainnav: about
 ---
 
 <p class="path noprint">
-  <a class="pathentry" href="/">Home</a> 
+  <a class="pathentry" href="/about/">About</a> 
   <span class="pathentry sep">/</span>
   <a class="pathentry" href="/legal/">Terms and conditions</a> 
   <br style="clear: both" />
