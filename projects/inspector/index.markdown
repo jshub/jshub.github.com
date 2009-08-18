@@ -16,7 +16,7 @@ title: Tag Inspector
 
 The Inspector provides a visual interface to the tag.
 
- * [See the Inspector in the demo store](/retail2/)
+* [See the Inspector in the demo store](/retail/)
 
 The Inspector is currently deployed as a script in the page. It will shortly be available as an installable browser extension. This means that any web professionals working on the site can install the inspector and see reports and warnings, without the page weight of delivering the code to all end users.
 

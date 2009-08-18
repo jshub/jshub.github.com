@@ -35,4 +35,4 @@ The Tag Inspector provides a simple, user friendly view of the tag and all data 
 The jsHub.org demo store is an online store front used to demonstrate the hPage specification, the jsHub tag and the Inspector.
 
  * [Demo store project page](/projects/demos/)
- * [Enter the jsHub.org Demo Store](/retail2/)
+ * [Enter the jsHub.org Demo Store](/retail/)

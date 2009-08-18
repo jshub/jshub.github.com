@@ -17,7 +17,7 @@ title: Demo Site Project
 
 The jsHub Demo Store is the first reference implementation of [microformat markup](/projects/markup/), used to test how the markup is used in practice.
 
- * [Enter the demo store](http://jshub.org/retail2/)
+* [Enter the demo store](/retail/)
 
 The goal of the store is to help us to develop best practice for implementing semantic markup about each page, and to provide a solid working example for site owners implementing the markup themselves.
 

@@ -66,7 +66,7 @@ namespace :custom do
     run "ln -nfs /var/capistrano/core/current/public #{webroot}/core"
     run "ln -nfs /var/capistrano/ui/current/public #{webroot}/ui"
     run "ln -nfs /var/capistrano/configurator/current/public #{webroot}/configurator"
-    run "ln -nfs /var/capistrano/retail2/current/public #{webroot}/retail2"
+    run "ln -nfs /var/capistrano/retail/current/public #{webroot}/retail"
   end
 
 end

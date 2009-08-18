@@ -26,7 +26,7 @@ A tag in this sense is a script that runs when the page is loaded, and collects 
 
  * [Configure a jsHub tag](/configurator/)
 
-**If you want to understand the tag and the markup more in practice,** start with the [demo store](/retail2/), and see some examples of markup in the page. There will be more implementation guides on the site soon.
+**If you want to understand the tag and the markup more in practice,** start with the [demo store](/retail/), and see some examples of markup in the page. There will be more implementation guides on the site soon.
 
 # Developer information #
 If you are interested in how the code works, then please read on.
