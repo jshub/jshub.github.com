@@ -24,7 +24,7 @@ The goal of the store is to help us to develop best practice for implementing se
 Microformats for marking up ecommerce functionality are under development, and will be incorporated into the store as a reference point.
 
 ## The Inspector and microformats ##
-The demo store showcases the [Tag Inspector](/projects/inspector/). Click on the inspector icon (bottom right of every page), to see the events that have been parsed from the microformat data on the page. You can compare this with the HTML view of microformats at the bottom of each page.
+The demo store showcases the [Tag Inspector](/projects/inspector/). Within the demo store click on the inspector icon (bottom right of every page), to see the events that have been parsed from the microformat data on the page. You can compare this with the HTML view of microformats at the bottom of each page.
 
 ## Technology ##
 The store is based on the [Spree ecommerce platform](http://spreecommerce.com/). 
