@@ -14,7 +14,7 @@ title: Tag Inspector
 
 # jsHub Tag Inspector #
 
-The Inspector provides a d visual interface to the tag. spud
+The Inspector provides a visual interface to the tag.
 
  * [See the Inspector in the demo store](/retail2/)
 
