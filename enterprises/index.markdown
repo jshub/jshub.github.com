@@ -1,6 +1,7 @@
 ---
-layout: about
+layout: projects
 title: Enterprises
+tab: home
 ---
 
 <p class="path noprint">

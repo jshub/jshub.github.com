@@ -10,6 +10,8 @@ title: hPage microformat specification
   <br style="clear: both" />
 </p>
 
+{% include wiki_toc.markdown %}
+
 # hPage Microformat #
 
 **Status**
