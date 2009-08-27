@@ -1,10 +1,3 @@
-/* Only constrain width on a wiki page */
-body.wiki #main {
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Styles for the path of hierarchical pages */
 p.path { 
   margin: 0 0 0 0; 
@@ -29,7 +22,7 @@ p.path .sep { color: #666; padding: 0 }
 p.path .pathentry { float: left }
 
 /* Styles for the TracGuideToc wikimacro */
-.wiki-toc {
+.maruku_toc {
  position: relative;
  float: right;
  max-width: 250px;
@@ -43,8 +36,8 @@ p.path .pathentry { float: left }
  font-size: 11px;
  line-height: 12px;
 }
-.wiki-toc h4 { font-size: 12px; margin: 0 }
-.wiki-toc ul, .wiki-toc ol {
+.maruku_toc h4 { font-size: 12px; margin: 0 }
+.maruku_toc ul, .maruku_toc ol {
   color: #821818;
   list-style: disc; 
   padding: 0; 
@@ -52,17 +45,17 @@ p.path .pathentry { float: left }
   padding-bottom: 0.8em; 
   margin: 0 
 }
-.wiki-toc ul ul, .wiki-toc ol ol { 
+.maruku_toc ul ul, .maruku_toc ol ol { 
   padding: 0; 
   padding-left: 1.2em; 
   padding-bottom: 0.5em; 
 }
-.wiki-toc ul ul ul, .wiki-toc ol ol ol { 
+.maruku_toc ul ul ul, .maruku_toc ol ol ol { 
   padding: 0; 
   padding-left: 1.2em; 
   padding-bottom: 0; 
 }
-.wiki-toc li { margin: 0; padding: 1px; }
-.wiki-toc .active { background: #ff9; position: relative; }
+.maruku_toc li { margin: 0; padding: 1px; }
+.maruku_toc .active { background: #ff9; position: relative; }
 
-.wiki-toc :link, .wiki-toc :visited { border: none; }
+.maruku_toc :link, .maruku_toc :visited { border: none; }

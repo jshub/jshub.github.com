@@ -12,20 +12,22 @@
 
 <div id="sitenav" class="nav">
   <ul>
-    <li>
+    <li class="first {% if page.tab == "home" %} active {% endif %}">
       <a title="Back home" href="/">Home</a>
     </li>
-    <li {% if page.layout == "projects" %} class="active" {% endif %}>
+    <!--
+    <li class="{% if page.layout == "post" %} active {% endif %}">
+      <a title="Blog" href="/blog/">Blog</a>
+    </li>
+    -->
+    <li class="{% if page.layout == "projects" and page.tab != "home" %} active {% endif %}">
       <a title="projects" href="/projects/">Projects</a>
     </li>
     <li>
       <a title="Configure a jsHub tag" href="/configurator/">Configurator</a>
     </li>
-    <li {% if page.layout == "about" %} class="active" {% endif %}>
+    <li class="last {% if page.layout == "about" %} active {% endif %}">
       <a title="About" href="/about/">About</a>
     </li>
-<!--<li class="last">
-      <a title="Blog" href="/blog/">Blog</a>
-    </li>-->
   </ul>
 </div>

@@ -1,4 +1,4 @@
- /* IE < 8  doesnt support 'inherit' for color on links */
+/* IE < 8  doesnt support 'inherit' for color on links */
 #sitenav :link, #sitenav :visited {
   color: #000;
 }

@@ -1,6 +1,7 @@
 ---
 layout: projects
 title: hPage microformat specification
+tab: home
 ---
 
 <p class="path noprint">
@@ -9,6 +10,8 @@ title: hPage microformat specification
   <a class="pathentry" href="/hPage/">hPage microformat</a> 
   <br style="clear: both" />
 </p>
+
+{% include wiki_toc.markdown %}
 
 # hPage Microformat #
 

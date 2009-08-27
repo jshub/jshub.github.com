@@ -3,24 +3,32 @@
 <html>
 <head>
 	<title>{{ page.title }} - jsHub</title>
+  {% include yui3.html %} 
   {% include stylesheets.html %} 
+  {% include syntaxhighlighter.html %}   
 </head>
-<body class="wiki">
-  
+<body class="jshub wiki yui-cssreset yui-cssfonts yui-cssgrids yui-cssbase">
+
 {% if page.ribbon %}  
   <a href="http://github.com/jshub/jshub-core/tree/master"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub" /></a>
 {% endif %}
 
 {% include banner.html %}
 
-<div id="mainnav" class="nav"></div>
-<div id="main">
-  <div id="content" class="wiki">
-    <div class="wikipage searchable">
-      {{ content }}
-    </div>
-  </div>
-</div>
+  <div class="yui-d-custom page {{ page.categories }}">
+
+    <div class="content">
+      <div class="yui-main">
+        <div class="yui-b col1">
+  
+        {{ content }}
+  
+        </div><!-- col1 -->
+      </div><!-- yui-main -->
+    </div><!-- content -->
+
+	</div><!-- page -->
+
 
 {% include footer.html %}
 
