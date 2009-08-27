@@ -1,6 +1,7 @@
 ---
 layout: projects
 title: jsHub Tag 
+ribbon: true
 ---
 
 <p class="path noprint">
