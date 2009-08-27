@@ -7,3 +7,6 @@ exclude:
  - Capfile
  - config
  - lib
+lsi: false # github default false - produces latent semantic (related) index of posts
+permalink: /blog/:categories/:year/:month/:day/:title # date
+app_url: http://jshub.org # for FQDN links to hosted apps, e.g. configurator
