@@ -1,13 +1,12 @@
 ---
-layout: projects
+layout: home
 title: Enterprises
-tab: home
 ---
 
 <p class="path noprint">
   <a class="pathentry" href="/">Home</a> 
   <span class="pathentry sep">/</span>
-  <a class="pathentry" href="/enterprises/">jsHub benefits for enterprises</a> 
+  <a class="pathentry" href="/enterprise/">jsHub benefits for enterprises</a> 
   <br style="clear: both" />
 </p>
 
@@ -17,7 +16,7 @@ The average enterprise website contains more than one JavaScript data collection
 
 Each of these tags represents **redundant, duplicate data**. And each instance of duplicate data is both wasted effort from the team maintaining the page, and another place where data that should be identical may get out of synch.
 
-jsHub helps to minimize the cost of implementing new tag-based products on your site, by providing a practical Don't Repeat Yourself solution to deploying the markup.
+jsHub helps to **minimize the cost of implementing** new tag-based products on your site, by providing a practical Don't Repeat Yourself solution to deploying the markup.
 
 ## Why is tagging so expensive? ##
 

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>{{ page.title }} - jsHub</title>
+  {% include stylesheets.html %} 
+</head>
+<body class="wiki">
+  
+{% if page.ribbon %}  
+  <a href="http://github.com/jshub/jshub-core/tree/master"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub" /></a>
+{% endif %}
+
+{% include banner.html %}
+
+<div id="mainnav" class="nav"></div>
+<div id="main">
+  <div id="content" class="wiki">
+    <div class="wikipage searchable">
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}
+
+</body>
+</html>

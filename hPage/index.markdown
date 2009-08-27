@@ -1,7 +1,6 @@
 ---
-layout: projects
+layout: home
 title: hPage microformat specification
-tab: home
 ---
 
 <p class="path noprint">

@@ -1,7 +1,6 @@
 ---
-layout: projects
+layout: home
 title: Markup standards
-tab: home
 ---
 
 <p class="path noprint">
