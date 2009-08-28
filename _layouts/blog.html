@@ -8,17 +8,24 @@
   <link href="http://jshub.org/rss/blog/atom.xml" rel="alternate" title="jshub.org Blog" type="application/atom+xml" />
   {% include yui3.html %} 
   {% include stylesheets.html %} 
+  <link rel="stylesheet" href="/stylesheets/blog.css" type="text/css" />
   {% include blog/runcoderun.html %}
 </head>
 <body class="jshub blog yui-cssreset yui-cssfonts yui-cssgrids yui-cssbase">
 
 {% include banner.html %}
 
-  <div class="yui-d-custom post {{ page.categories }}">
+  <div class="yui-d-custom post {{ page.categories | join: ' ' }}">
 
     <div class="content">
       <div class="yui-main">
         <div class="yui-b col1">
+  
+        <h1 class="rss">
+          <a href="/rss/blog/atom.xml" title="Subscribe to the RSS feed">
+            {{ page.title }}
+          </a>
+        </h1>
   
         {{ content }}
   

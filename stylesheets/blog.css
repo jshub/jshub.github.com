@@ -1,0 +1,58 @@
+body.blog  div.yui-d-custom {
+  padding-right: 16px;
+}
+
+body.blog div.post div.yui-main {
+  margin-top: 36px;
+}
+body.blog div.post div.sidebar {
+  margin-top: 36px;
+  padding-left: 1em;
+  border-left: 2px #e2e4e9 solid;
+}
+
+body.blog div.post div.sidebar div.featured {
+  background-color: #f1f1f1;
+  padding: 16px;
+}
+body.blog div.post div.sidebar div.featured h3 {
+  margin-top: 0;
+}
+body.blog div.post div.sidebar div.featured img {
+  display: block;
+  margin: auto;
+}
+body.blog div.post div.sidebar div.featured p {
+  font-size: 90%;
+}
+
+body.blog div.post div.sidebar div.featured div {
+}
+
+body.blog h1 :link, body.blog h1 :visited, 
+body.blog h2 :link, body.blog h2 :visited,
+body.blog h3 :link, body.blog h3 :visited,
+body.blog h4 :link, body.blog h4 :visited,
+body.blog h5 :link, body.blog h5 :visited,
+body.blog h6 :link, body.blog h6 :visited {
+  border: medium none;
+}
+
+body.blog .rss a {
+  display: block;
+}
+body.blog h1.rss a {
+  line-height: 67px;
+  padding-left: 67px;
+  background: url("../images/blog/feed-icon-62x62.png") no-repeat 0 50%;
+}
+body.blog h2.rss a {
+  line-height: 33px;
+  padding-left: 33px;
+  background: url("../images/blog/feed-icon-28x28.png") no-repeat 0 50%;
+}
+body.blog h3.rss a {
+  line-height: 19px;
+  padding-left: 19px;
+  background: url("../images/blog/feed-icon-14x14.png") no-repeat 0 50%;
+}
