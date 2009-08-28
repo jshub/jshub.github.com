@@ -1,6 +1,11 @@
+{% if page.comments %}
+
 <!-- Disqus comment system 
    ref: http://disqus.com/comments/universal/jshub/
 -->
+
+<hr />
+
 <script type="text/javascript">
 /*
   Enable/disable development options
@@ -31,3 +36,5 @@ if (window.location.href.indexOf('://jshub.org/') === -1) {
 })();
 //]]>
 </script>
+
+{% endif %}
