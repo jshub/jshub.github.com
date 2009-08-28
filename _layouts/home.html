@@ -5,19 +5,20 @@
 	<title>{{ page.title }} - jsHub</title>
   {% include yui3.html %} 
   {% include stylesheets.html %} 
+  <link rel="stylesheet" href="/stylesheets/home.css" type="text/css" />
   {% include syntaxhighlighter.html %}   
 </head>
-<body class="jshub wiki yui-cssreset yui-cssfonts yui-cssgrids yui-cssbase">
+<body class="jshub home yui-cssreset yui-cssfonts yui-cssgrids yui-cssbase">
 
 {% if page.ribbon %}  
-  <a href="http://github.com/jshub/jshub-core/tree/master"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub" /></a>
+  {% include fork_me_on_github.html %}
 {% endif %}
 
 {% include banner.html %}
 
 
 
-  <div class="yui-d-custom page {{ page.categories }}">
+  <div class="yui-d-custom page {{ page.categories | join: ' ' }}">
 
     <div class="content">
       <div class="yui-main">

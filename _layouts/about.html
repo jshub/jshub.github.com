@@ -11,7 +11,7 @@
 
 {% include banner.html %}
 
-  <div class="yui-d-custom page {{ page.categories }}">
+  <div class="yui-d-custom page {{ page.categories | join: ' ' }}">
 
     <div class="content">
       <div class="yui-main">

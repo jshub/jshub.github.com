@@ -1,0 +1,7 @@
+body.home div.page div.col1 > div {
+  padding-right: 1em;
+}
+body.home div.page div.col2 > div {
+  padding-left: 1em;
+  border-left: 2px #e2e4e9 solid;
+}
