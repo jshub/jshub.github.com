@@ -56,3 +56,24 @@ body.blog h3.rss a {
   padding-left: 19px;
   background: url("../images/blog/feed-icon-14x14.png") no-repeat 0 50%;
 }
+
+body.blog div.post div.yui-main div.col1 div.pullout {
+  border:medium none;
+  margin:0.25em 0 1.5em;
+  padding:1em 1em 0.25em 48px;
+}
+body.blog div.post div.yui-main div.col1 div.note {
+  background: #fff9d8 url("../images/blog/tab_note.gif") no-repeat scroll left top;
+}
+body.blog div.post div.yui-main div.col1 div.warning {
+  background: #fff9d8 url("../images/blog/tab_yellow.gif") no-repeat scroll left top;
+}
+body.blog div.post div.yui-main div.col1 div.warning.strong {
+  background: #f9d9d8 url("../images/blog/tab_red.gif") no-repeat scroll left top;
+}
+body.blog div.post div.yui-main div.col1 div.info {
+  background: #d5e9f6 url("../images/blog/tab_info.gif") no-repeat scroll left top;
+}
+body.blog div.post div.yui-main div.col1 div.code {
+  background: #eee url("../images/blog/tab_grey.gif") no-repeat scroll left top;
+}
