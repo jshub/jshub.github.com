@@ -10,13 +10,12 @@
 </head>
 <body class="jshub home yui-cssreset yui-cssfonts yui-cssgrids yui-cssbase">
 
-{% if page.ribbon %}  
-  {% include fork_me_on_github.html %}
-{% endif %}
+  {% if page.ribbon %}  
+    {% include fork_me_on_github.html %}
+  {% endif %}
 
-{% include banner.html %}
-
-
+  {% include hpage.html %}
+  {% include banner.html %}
 
   <div class="yui-d-custom page {{ page.categories | join: ' ' }}">
 

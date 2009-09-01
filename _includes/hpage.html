@@ -1,0 +1,15 @@
+<div class="hpage">
+  <p>Page name: <span class="name">
+    {% if page.pagename %}
+      {{ page.pagename }}
+    {% else %}
+      {{ page.title }}
+    {% endif %}</span></p>
+  <p>Type: <span class="type">{% if page.type %}{{ page.type }}{% else %}Content page{% endif %}</span>
+  <p>Categories: <span class="category">
+    {% for cat in page.categories %}
+      {{ cat | cgi_escape }}
+    {% endfor %}
+    </span></p>
+</div>
+
