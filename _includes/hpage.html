@@ -17,7 +17,7 @@
     {% endif %}
     </span>
   </p>
-  {% if page.categories != empty %}
+  {% if page.categories and page.categories != empty %}
   <p>Categories: 
     <span class="category">
     {% for cat in page.categories %}
