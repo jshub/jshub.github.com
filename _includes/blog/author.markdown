@@ -3,7 +3,7 @@
   {% if page.author %}
     by <span class="name"><a href="/about/" title="About {{ page.author }}">{{ page.author }}</a></span> 
   {% endif %}
-  {% if page.author %}
+  {% if page.categories != empty %}
     in <span class="categories">{{ page.categories | array_to_sentence_string }}</span> categories
   {% endif %}
   .
