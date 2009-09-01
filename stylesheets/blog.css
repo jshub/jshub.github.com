@@ -29,6 +29,11 @@ body.blog div.post div.sidebar div.featured {
 body.blog div.post div.sidebar div.featured h3 {
   margin-top: 0;
 }
+body.blog div.post div.sidebar div.featured h4 {
+  margin: 0.25em 0;
+  padding: 0.25em 0;
+  border-bottom: 2px solid #fff;
+}
 body.blog div.post div.sidebar div.featured img {
   display: block;
   margin: auto;
