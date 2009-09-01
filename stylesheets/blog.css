@@ -1,10 +1,21 @@
-body.blog  div.yui-d-custom {
+body.blog  div.post {
+  width: 784px;
+  min-width: 784px;
   padding-right: 16px;
 }
 
 body.blog div.post div.yui-main {
   margin-top: 36px;
 }
+body.blog div.post div.col1 {
+  border-right: 2px #e2e4e9 solid;
+}
+
+body.blog div.post div.col1 div.wrapper {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 body.blog div.post div.sidebar {
   margin-top: 36px;
   padding-left: 1em;

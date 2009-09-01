@@ -22,7 +22,8 @@
         <div class="yui-b col1">
 
           <h1>{{ page.title }}</h1>
-                    
+          
+          <div class="wrapper">
           {{ content }}
 
           <hr />
@@ -30,6 +31,7 @@
           {% include blog/author.markdown %}  
                     
           {% include blog/disqus.html %} 
+          </div><!-- wrapper -->
   
         </div><!-- col1 -->
       </div><!-- yui-main -->
