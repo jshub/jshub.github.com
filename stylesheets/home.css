@@ -1,10 +1,10 @@
 body.home div.page div.col1 {
-  padding-right: 2em;
-  border-right: 1px solid #404040;
+  padding-right: 1em;
+  border-right: 2px solid #e2e4e9;
   margin-right: -0.5em;
 }
 
 body.home div.page div.col2 {
-  padding-left: 2em;
+  padding-left: 1em;
   margin-left: -0.5em;
 }
