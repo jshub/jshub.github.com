@@ -15,9 +15,9 @@ When building any Javascript library for public (or internal) use, the supply of
 
 This is the first in a series of posts to discuss how we have deeply integrated testing into our Javascript development process, starting first with **Continuous Testing**.
 
-We have been using [Hudson][] as our [Continuous Integration][ci] server from *Day One&trade;*. Although it is commonly associated with Java projects, we built ourselves the means to automate the tests at the start of the project. 
+We have been using [Hudson][] as our [Continuous Integration][ci] server from *Day One&trade;*. Although it is commonly associated with Java projects, we built ourselves the means to automate our tests from the beginning. 
 
-We knew would get a good return on our investment for ourselves and in the visibility this gave to our sponsors that *Stuff Is Happening&trade;*.
+We knew we would get a good return on our investment for ourselves and in the visibility these test results gave to our sponsors that *Stuff Is Happening&trade;*.
 
   [hudson]: https://hudson.dev.java.net/
   [ci]: http://en.wikipedia.org/wiki/Continuous_integration
