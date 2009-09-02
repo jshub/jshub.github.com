@@ -11,9 +11,9 @@ author: Liam Clancy
 feature: core
 --- 
 
-When building any Javascript library for public (or internal) use, the supply of good tests is very important. They not only protect the code-base from the unintentional breakage when adding or removing features, but also provide a useful means to demonstrate all the features of the library in a practical manner, in many cases replacing the need for extensive documentation.
+When building any JavaScript library for public (or internal) use, the supply of good tests is very important. They not only protect the code-base from the unintentional breakage when adding or removing features, but also provide a useful means to demonstrate all the features of the library in a practical manner, in many cases replacing the need for extensive documentation.
 
-This is the first in a series of posts to discuss how we have deeply integrated testing into our Javascript development process, starting first with **Continuous Testing**.
+This is the first in a series of posts to discuss how we have deeply integrated testing into our JavaScript development process, starting first with **Continuous Testing**.
 
 We have been using [Hudson][] as our [Continuous Integration][ci] server from *Day One&trade;*. Although it is commonly associated with Java projects, we built ourselves the means to automate our tests from the beginning. 
 
@@ -110,7 +110,7 @@ I wish more projects did this.
 
 Whilst its often easy to download code and run tests locally, if you are dependent on 3rd party libraries you really want to have the same safety net and early warning of potential problems you have for own code.
 
-In our case the jsHub Javascript library makes use of features in [jQuery][] and so we are watching with interest as John Resig releases his [TestSwarm][] project to see how it complements or replaces our approach. We hope to be able to do a review of TestSwarm soon.
+In our case the jsHub JavaScript library makes use of features in [jQuery][] and so we are watching with interest as John Resig releases his [TestSwarm][] project to see how it complements or replaces our approach. We hope to be able to do a review of TestSwarm soon.
 
   [jquery]: http://jquery.com/
   [testswarm]: http://testswarm.com/
