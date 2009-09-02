@@ -8,18 +8,21 @@ comments: true
 
 title: Continuous Testing with RunCodeRun
 author: Liam Clancy
+feature: featured_project_core.html
 --- 
 
-When building any Javascript library for pubic (or internal) use, the supply of good tests is very important. They not only protect the code-base from the unintentional breakage when adding or removing features, but also provide a useful means to demonstrate all the features of the library in a practical manner, in many cases replacing the need for extensive documentation.
+When building any Javascript library for public (or internal) use, the supply of good tests is very important. They not only protect the code-base from the unintentional breakage when adding or removing features, but also provide a useful means to demonstrate all the features of the library in a practical manner, in many cases replacing the need for extensive documentation.
 
 This is the first in a series of posts to discuss how we have deeply integrated testing into our Javascript development process, starting first with **Continuous Testing**.
 
-We have been using [Hudson][] as our [Continuous Integration][ci] server from *Day One&trade;*, and although it is commonly associated with Java projects we built ourselves the means to automate the tests at the start of the project knowing we would get a good return on our investment for ourselves and in the visibility this gave to our sponsors that *Stuff Is Happening&trade;*.
+We have been using [Hudson][] as our [Continuous Integration][ci] server from *Day One&trade;*. Although it is commonly associated with Java projects, we built ourselves the means to automate the tests at the start of the project. 
+
+We knew would get a good return on our investment for ourselves and in the visibility this gave to our sponsors that *Stuff Is Happening&trade;*.
 
   [hudson]: https://hudson.dev.java.net/
   [ci]: http://en.wikipedia.org/wiki/Continuous_integration
 
-When deciding to share our code thought it important that we were also sharing the [real-time results][results] of these tests so other developers could have confidence:
+When deciding to share our code we thought it important that we were also sharing the [real-time results][results] of these tests so other developers could have confidence:
 
 ![RunCodeRun real-time results](/images/posts/2009-08/runcoderun_results.png)
 
@@ -27,7 +30,7 @@ When deciding to share our code thought it important that we were also sharing t
 1. in our commitment to fixing bugs and other problems in a timely manner
 1. in trusting that the code does what we say it does and nothing else
 
-## How we did it.
+## How we did it
 
 Originally we intended to set-up a public instance of Hudson, but became impressed with [RunCodeRun][rcr]'s ease of use and built-in integration with Github (which we saw on other [projects][rcr-blue-ridge]).
 
@@ -78,11 +81,11 @@ You can see our test results on RunCodeRun [here][results], and we also provide 
   [results]: http://runcoderun.com/jshub/jshub-core
   [build-status]: https://jshub.org/core/website/
 
-One thing missing in comparison to Hudson is the reporting of individual test-failures:
+One thing missing in comparison to Hudson is the reporting of individual test failures:
 
 ![Hudson results](/images/posts/2009-08/hudson_results.png)
 
-We have put a lot of work into making the raw test log very readable for local development so can still easily see a breakdown of tests in the RunCodeRun output. e.g.
+We have put a lot of work into making the raw test log very readable for local development so you can still easily see a breakdown of tests in the RunCodeRun output. e.g.
 
 <pre class="brush: text; gutter: false;">
 jslint: 0 issues in api.js using core rules
