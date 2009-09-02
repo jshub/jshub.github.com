@@ -8,7 +8,7 @@ comments: true
 
 title: Continuous Testing with RunCodeRun
 author: Liam Clancy
-feature: featured_project_core.html
+feature: core
 --- 
 
 When building any Javascript library for public (or internal) use, the supply of good tests is very important. They not only protect the code-base from the unintentional breakage when adding or removing features, but also provide a useful means to demonstrate all the features of the library in a practical manner, in many cases replacing the need for extensive documentation.
