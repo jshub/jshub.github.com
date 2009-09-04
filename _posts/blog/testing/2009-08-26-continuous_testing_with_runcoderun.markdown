@@ -110,7 +110,8 @@ I wish more projects did this.
 
 Whilst its often easy to download code and run tests locally, if you are dependent on 3rd party libraries you really want to have the same safety net and early warning of potential problems you have for own code.
 
-In our case the jsHub JavaScript library makes use of features in [jQuery][] and so we are watching with interest as John Resig releases his [TestSwarm][] project to see how it complements or replaces our approach. We hope to be able to do a review of TestSwarm soon.
+In our case the jsHub JavaScript library makes use of features in [jQuery][] and so we are watching with interest as [John Resig][resig] releases his [TestSwarm][] project to see how it complements or replaces our approach. We hope to be able to do a review of TestSwarm soon.
 
   [jquery]: http://jquery.com/
+  [resig]: http://ejohn.org/about/
   [testswarm]: http://testswarm.com/
