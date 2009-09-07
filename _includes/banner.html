@@ -21,10 +21,10 @@
     <li>
       <a title="Configure a jsHub tag" href="{{ site.app_url }}/configurator/">Configurator</a>
     </li>
-    <li class="last {% if page.layout == "about" %} active {% endif %}">
+    <li class="{% if page.layout == "about" %} active {% endif %}">
       <a title="About" href="/about/">About</a>
     </li>
-    <li class="{% if page.layout == "post" or page.layout == "blog" %} active {% endif %}">
+    <li class="last {% if page.layout == "post" or page.layout == "blog" %} active {% endif %}">
       <a title="Blog" href="/blog/">Blog</a>
     </li>
   </ul>
