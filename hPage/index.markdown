@@ -48,7 +48,7 @@ The hPage specification addresses three issues in the capture of clickstream dat
 
 The specification improves the accuracy of page views as a metric of engagement by recording the actual content that the user has seen, including AJAX content and dynamically served components of pages. The concept of hidden content allows authors to record content which is seen only after the page has loaded.
 
-hPage content is easily added to web pages and applications by simple modifications to existing HTML code and replaces similar declarations of data in !JavaScript code while retaining backwards compatibility.
+hPage content is easily added to web pages and applications by simple modifications to existing HTML code and replaces similar declarations of data in JavaScript code while retaining backwards compatibility.
 
 ## Scope ##
 The hPage specification provides a format for metadata about the page, including details of dynamic content that appears on the page. 
@@ -311,7 +311,7 @@ The class `hidden-on-load` is hPage metadata indicating which hPages should not 
 hPage metadata and CSS class names can be freely used on the same element where appropriate.
 </div>
 
-When the user clicks on a tab (1b), this fires a !JavaScript event. The event handler makes a CSS change which causes the selected tab to be displayed. The event handler will additionally trigger the parser to look for hPages within the newly-displayed tab. The DOM node that is examined, `#tab-3` in this example, is called the *context* for the event. 
+When the user clicks on a tab (1b), this fires a JavaScript event. The event handler makes a CSS change which causes the selected tab to be displayed. The event handler will additionally trigger the parser to look for hPages within the newly-displayed tab. The DOM node that is examined, `#tab-3` in this example, is called the *context* for the event. 
 
 The parser will collect data from the hPage element(s) within this node, but not the rest of the document. The result will be composite of all hPages within that DOM node, whether marked as `hidden-on-load` or not.
 
@@ -335,7 +335,7 @@ The static content in the background (2a) is visible when the page is first load
 When the user interacts with the page, by clicking a button (2b) then new content is displayed (2c).
 </div>
 
-Again, the !JavaScript event handler which loads the content should trigger the parser to parse only the DOM node enclosing the new content. The parser *should* data from any hPage elements in this node, even if they are marked as `hidden-on-load`. However, including `hidden-on-load` would be redundant and is not recommended, because the hPage was not present in the DOM during the initial parse.  
+Again, the JavaScript event handler which loads the content should trigger the parser to parse only the DOM node enclosing the new content. The parser *should* data from any hPage elements in this node, even if they are marked as `hidden-on-load`. However, including `hidden-on-load` would be redundant and is not recommended, because the hPage was not present in the DOM during the initial parse.  
 
 Consumers of the data found by the parser should treat the new hPage as a separate page view. In this way, a new view of content by the user generates a page view on the same footing, whether it comes from loading a separate URL, from revealing hidden content, or loading content into the page. 
 
