@@ -13,9 +13,33 @@ h1 {
   padding-top: 0em;
 }
 
+p.strapline {
+  font-size: 140%;
+  text-align: center;
+}
+
+p.strapline span {
+  background-color: #FDFDAA;
+  padding: 0.2em;
+}
+
+.page {
+  background-color: transparent !important;
+}
+
+p.calltoaction {
+  margin: 2em 1em;
+}
+p.calltoaction a {
+  background-color: #C7E940;
+  border: 1px solid #4F5D19;
+  padding: 0.4em;
+}
+
 /* Classes for carousel */
 .jcarousel-container {
-  border: 3px solid #C7E940;
+  border-top: 3px solid #C7E940;
+  background-color: #fff;
 }
 
 .jcarousel-container-horizontal {
@@ -44,7 +68,7 @@ h1 {
 .carousel-links li {
   display: inline;
   font-size: 125%;
-  padding: 0.2em 1em;
+  padding: 0.2em 0.7em;
   cursor: pointer;
   cursor: hand;
 }
@@ -55,7 +79,7 @@ h1 {
 
 /* Smaller code example text */
 .syntaxhighlighter {
-  font-size: 80% !important;
+  font-size: 1em !important;
   margin-top: 0px !important;
 }
 
