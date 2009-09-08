@@ -6,7 +6,7 @@ title: Welcome
 <br/>
 
 <p class="strapline">
-  <span>jsHub helps eliminate web page tagging overload and data duplication.</span>
+  jsHub eliminates data duplication when connecting software services to websites.
 </p>
 
 
@@ -14,22 +14,22 @@ title: Welcome
 
 <ul class="carousel-links">
   <li id="scroll-jshub" class="active">Welcome</li>
-  <li id="scroll-developers">Developers</li>
-  <li id="scroll-implementors">Implementors</li>
   <li id="scroll-owners">Website owners</li>
+  <li id="scroll-implementors">Implementors</li>
+  <li id="scroll-developers">Developers</li>
   <li id="scroll-vendors">Vendors</li>
 </ul>
 
 <ul id="carousel" class="jcarousel-skin-tango">
   <li id="jshub">
     <p>
-      It is common for web pages to contain many different tracking tags used for web analytics, ad tracking, targeting, audience measurement, and more. Some sites have more than 10 tags per page.
+      It is common for web pages to contain many different tracking tags used for web analytics, audience measurement, optimization, and more. Some sites have more than 10 tags per page.
     </p>
     <p>
-      Each tag adds either HTML or JavaScript to the page, adding to its weight: more tags mean larger pages, which causes longer load times. And each tag reads the same information from the page, which can lead to inconsistencies. 
+      Each tag adds some code to a web page, increasing its weight and causing longer load times. And each tag reads the same information from the page, which can lead to inconsistencies. 
     </p>
     <div class="right">
-      <a href="/projects/inspector/"><img src="/images/inspector/3InspectorOverview.png" width="270" height="212" alt="Inspector screenshot"></a>
+      <img src="images/jshub/tools_montage.png" width="294" height="207" alt="Tools Montage">
     </div>
     <h2>
       A fresh approach
@@ -41,25 +41,22 @@ title: Welcome
       <a href="/retail/">&rarr; See it in action in the demo site</a>  
     </p>
   </li>
-  <li id="developers">
-    <h1>Standard code</h1>
+  <li id="owners">
+    <h1>Implement tags for the last time</h1>
     <p>
-      The jsHub tag is written in JavaScript and distributed under the BSD open source license.
+      If you run a site, jsHub can help you with consistent information across different products, lower tag weight and the assurance that the tag is widely tested and secure.
     </p>
     <p>
-      We have a robust plugin architecture to provide consistent data to multiple products.
-    </p>
-    <div class="right">
-      <a href="/projects/"><img src="/images/jshub/jshub_tests_300.png" width="300" height="175" alt="Jshub tests screenshot"></a>
-    </div>
-    <p>
-      If you are a JavaScript developer, come and see how we do fully automated, cross-browser, continuous integration testing.
+      For large sites, implementing a tab-based solution can be a significant expense. jsHub tags allow you to implement any further products simply by adding the relevant plugin to your tag.
     </p>
     <p>
-      Try creating a plugin for your product or come and see how we apply best practice to our code.
+      If you are maintaining a smaller site, you can use our <a href="/projects/inspector/">Tag Inspector</a> to self-service and check what is actually being sent from your tag implementation.
+    </p>
+    <p>
+      Your end users benefit from faster page load times and greater transparency. With the Tag Inspector an end user can quickly see what information is being gathered on the page.
     </p>
     <p class="calltoaction">
-      <a href="/projects/">&rarr; Go to the developer projects page</a>  
+      <a href="/enterprise/">&rarr; Learn how jsHub helps the enterprise</a>  
     </p>
   </li>
   <li id="implementors">
@@ -89,25 +86,28 @@ title: Welcome
       <a href="/projects/markup/">&rarr; Go to the markup project page</a>  
     </p>
   </li>
-  <li id="owners">
-    <h1>Implement tags for the last time</h1>
+  <li id="developers">
+    <h1>Standard code</h1>
     <p>
-      If you run a site, jsHub can help you</a> with consistent information across different products, lower tag weight and the assurance that the tag is widely tested and secure.
+      The jsHub tag is written in JavaScript and distributed under the BSD open source license.
     </p>
     <p>
-      For large sites, implementing a tab-based solution can be a significant expense. jsHub tags allow you to implement any further products simply by adding the relevant plugin to your tag.
+      We have a robust plugin architecture to provide consistent data to multiple products.
+    </p>
+    <div class="right">
+      <a href="/projects/"><img src="/images/jshub/jshub_tests_300.png" width="300" height="175" alt="Jshub tests screenshot"></a>
+    </div>
+    <p>
+      If you are a JavaScript developer, come and see how we do fully automated, cross-browser, continuous integration testing.
     </p>
     <p>
-      If you are maintaining a smaller site, you can use our <a href="/projects/inspector/">Tag Inspector</a> to self-service and check what is actually being sent from your tag implementation.
-    </p>
-    <p>
-      Your end users benefit from faster page load times and greater transparency. With the Tag Inspector an end user can quickly see what information is being gathered on the page.
+      Try creating a plugin for your product or come and see how we apply best practice to our code.
     </p>
     <p class="calltoaction">
-      <a href="/enterprise/">&rarr; See how jsHub helps the enterprise</a>  
+      <a href="/projects/">&rarr; Go to the developer projects page</a>  
     </p>
   </li>
-  <li>
+  <li id="vendors">
     <h1>
       Use jsHub to power your product
     </h1>
@@ -132,7 +132,7 @@ title: Welcome
 <script type="text/javascript">
 (function () {
   var initButtons = function(carousel) {
-    $.each(['jshub', 'developers', 'implementors', 'owners', 'vendors'], function(idx, name) {
+    $.each(['jshub', 'owners', 'implementors', 'developers', 'vendors'], function(idx, name) {
       $('#scroll-'+name).click(function () {
         $('.carousel-links li').removeClass('active');
         $(this).addClass('active');
