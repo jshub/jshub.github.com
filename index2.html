@@ -3,6 +3,8 @@ layout: home
 title: Welcome
 ---
 
+<script src="/javascripts/homepage-carousel.js" type="text/javascript" charset="utf-8"></script>
+
 <br/>
 
 <p class="strapline">
@@ -129,29 +131,4 @@ title: Welcome
   </li>
 </ul>
 
-<script type="text/javascript">
-(function () {
-  var initButtons = function(carousel) {
-    $.each(['jshub', 'owners', 'implementors', 'developers', 'vendors'], function(idx, name) {
-      $('#scroll-'+name).click(function () {
-        $('.carousel-links li').removeClass('active');
-        $(this).addClass('active');
-        carousel.scroll(idx+1);
-      })
-    });
-  };
-  
-  $(document).ready(function() {
-    $('#carousel').jcarousel({
-      visible : 1,
-      scroll : 1,
-      // buttonPrevHTML : null,
-      // buttonNextHTML : null,
-      easing : 'easeOutExpo',
-      initCallback : initButtons
-    });
-  });
-  
-})();
-</script>
 
