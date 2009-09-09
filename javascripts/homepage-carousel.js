@@ -6,7 +6,7 @@
   var carousel;
   
   var scrollToCurrentPanel = function () {
-    var hash = document.location.hash, panel_number = panel_numbers[hash];
+    var hash = document.location.hash || '#welcome', panel_number = panel_numbers[hash];
     if (panel_number === undefined) {
       return;
     }
