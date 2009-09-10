@@ -14,11 +14,11 @@ h1 {
 }
 
 p.strapline {
-  font-size: 125%;
+  font: italic 135% georgia, times, serif;
   text-align: center;
 }
 
-p.strapline span {
+p.strapline .highlight {
   background-color: #FDFDAA;
   padding: 0.2em;
 }
