@@ -11,14 +11,14 @@
       return;
     }
     $('.carousel-links li').removeClass('active');
-    $(hash).addClass('active');
+    $('#scroll-'+hash.substring(1)).addClass('active');
     carousel.scroll(panel_number);
   };
   
   var initButtons = function (new_carousel) {
     carousel = new_carousel;
     $('.carousel-links li').each(function (index, element) {
-      var node = $(this), id = '#' + node.attr('id');
+      var node = $(this), id = '#' + node.attr('id').substring('scroll-'.length);
       panel_numbers[id] = index + 1;
       
       node.click(function () {
