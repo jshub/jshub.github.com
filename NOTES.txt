@@ -1,3 +1,12 @@
+How-to
+======
+
+* To generate the site into the _site folder: `jekyll`
+* To run the site locally for development, run `jekyll --server` which creates an http server on localhost:4000
+* To deploy to staging environment, just commit in the master branch and `git push origin master` (or just git push). It will be deployed to http://jshub.github.com/ NB this is open and public although not linked, so don't put anything secret here!
+* To deploy to the live server on http://jshub.org/ run `cap deploy`
+
+
 Notes
 =====
 
