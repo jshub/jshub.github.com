@@ -3,124 +3,125 @@ layout: home
 title: Welcome
 ---
 
+<script src="/javascripts/homepage-carousel.js" type="text/javascript" charset="utf-8"></script>
+
 <br/>
 
-<p style="font-size:123.1%;">
-  jsHub is an open source project created to eliminate the problems of
-  web page tagging overload and data duplication.
-  <strong><a href="/projects/jshub/">We make tools</a></strong> to make 
-  web site tagging easy, fast and secure. 
-  We host <strong><a href="/projects/markup/">open standards</a></strong> that eliminate 
-  data inconsistencies across vendors.
+<p class="strapline">
+  jsHub simplifies connecting software services to websites.
 </p>
 
-<br/>
-
-<iframe src="http://prezi.com/aoqjl9ws8pqd/view/" style="display: block; margin-left: auto; margin-right: auto; width: 550px; height: 320px"></iframe>
 
 <br/>
 
-<div class="yui-g">
-  <div class="yui-u first">
-    <div class="col1">
-    
-    <h1>What?</h1>
-    
+<ul class="carousel-links">
+  <li id="scroll-welcome" class="active">Welcome</li>
+  <li id="scroll-website-owners">Website owners</li>
+  <li id="scroll-vendors">Vendors</li>
+  <li id="scroll-markup">Better markup</li>
+  <li id="scroll-code">Better code</li>
+</ul>
+
+<ul id="carousel" class="jcarousel-skin-tango">
+  <li id="panel-welcome">
     <p>
-      jsHub is an open source project created to eliminate the problems of
-      web page tagging overload and data inconsistency.
+      Web sites typically connect to many different software services - web analytics, audience measurement, optimization, and many more. Each connection is made with a small piece of code called a &lsquo;tag&rsquo;. 
     </p>
     <p>
-      The <a href="/projects/jshub/">jsHub tag</a> is written in JavaScript 
-      and distributed under the BSD license.  It comes with a complete suite 
-      of automated tests and cross browser continuous integration testing to 
-      ensure its quality.
+      Some sites have  10 or more tags on a page, and each one adds to the time it takes for the page to load. Each tag needs similar information to be written into the page, but in a slightly different format, and this can cause awkward inconsistencies. 
     </p>
-    
-    <h2>Based on standards</h2>
-    <p>
-      To ensure that data is only collected once the jsHub project is
-      proposing a <a href="/projects/markup/">page markup standard</a> based
-      on HTML microformats, and released into the public domain, for common 
-      page metadata.
-    </p>
-    
-    <h2>Comes with tools</h2>
-    <p>
-      We provide a <a href="/projects/inspector/">Tag Inspector</a> which shows all the data that is 
-      being collected on the page. No more debugging your implementation by
-      monitoring HTTP traffic and unescaping query strings in your head!
-    </p>
-    <p>
-      <a href="/projects/inspector/"><img src="/images/inspector/3InspectorOverview.png" width="291" height="236" alt="Inspector screenshot"></a>
-    </p>
-    
-    <h2>Comes with best practice</h2>
-    <p>
-      There is a <a href="/projects/demos/">demo store</a> which shows the tag, markup and tag inspector
-      working together. Giving you a real life example of how to deploy the code.
-    </p>
-    <a href="/projects/demos/"><img src="/images/jshub/jshub_demo_store_300.png" width="300" height="193" alt="Demo Store screenshot"/></a>
-    
-    <h2>Comes with tests</h2>
-    <p>
-      If you are a JavaScript developer, come and see how we do fully automated, cross-browser, continuous
-      integration testing. How was our last build? You'll find the status and details of all the developer
-      activity on the <a href="/projects/">projects page</a>.
-    </p>
-    <a href="/projects/"><img src="/images/jshub/jshub_tests_300.png" width="300" height="175" alt="Jshub tests screenshot"/></a>
-      
+    <div class="right">
+      <img src="images/jshub/tools_montage.png" width="294" height="207" alt="Tools Montage">
     </div>
-  </div>
-  <div class="yui-u">
-    <div class="col2">
-    
-    <h1>Why?</h1>
-    
+    <h2>
+      A professional approach
+    </h2>
     <p>
-      It is common for web pages to contain many different tracking tags
-      used for web analytics, advertising tracking, targetting, audience
-      measurement, and more.   Some sites have more than 10 tags per page.
+      jsHub is a <a href="/projects/">suite of tools</a> and a <a href="/standards/">set of standards</a>, that help you to make better websites. 
     </p>
     <p>
-      Each tag adds either HTML or JavaScript to the page adding to its
-      weight: more tags means larger pages which means longer load times.
-      And each tag ends up reading the same information from the page, such
-      as its name, which can lead to inconsistencies. 
+      Tagging doesn't have to be painful.
+    </p>
+    <p class="calltoaction">
+      <a href="/retail/">&rarr; See jsHub in action in the demo site</a>  
+    </p>
+  </li>
+  <li id="panel-website-owners">
+    <h1>Implement tags properly, and only once</h1>
+    <p>
+      Most companies are surprised by the effort of tagging a website. jsHub means you only need to do it once. It is a single, shared tag used by all the products you have on your site. Deploying a new software service on your site? Just add the relevant plugin to the tag and you're done.
     </p>
     <p>
-      We believe that implementing a tag-based product on your site should 
-      not be an expensive exercise in repeating yourself, and it should not
-      lock you in to a single "universal tag" provider.
-    </p>
-    
-    <h2>Who benefits from jsHub?</h2>
-    <p>
-      Vendors benefit because cross product data problems are eliminated as
-      data is read once,  they can use common code eliminating most of their
-      tag maintenance, and tag installation becomes easier as jsHub becomes
-      widely adopted. <br/>
-      See the <a href="/standards/">standards pages</a> for more. 
+      jsHub also provides helpful tools including the <a href="/projects/inspector/">Tag Inspector</a>. It allows marketing teams to check that markup is correct, without needing to look at code. jsHub empowers the people who rely on the data, and make them less reliant on support from the busy IT team.
     </p>
     <p>
-      Web site owners benefit from improved consistency of information
-      across different products, lower tag weight and the assurance that the
-      tag is widely tested and secure. <br/>
-      For more on the cost of implementation, see the <a href="/enterprise/">enterprise
-      page</a>.
+      Whatever the site, jsHub can help you with consistent information across different products, faster web browsing, easier implementations, and the assurance that the tag is widely tested and secure. 
     </p>
-    <p>With the Tag Inspector web site owners can self-service and check
-      tag implementation.<br/>
-      On the <a href="/projects/demos/">demo site</a>, you can see the 
-      inspector in action.
+    <p class="calltoaction">
+      <a href="/enterprise/">&rarr; Learn how jsHub helps the enterprise</a>  
+    </p>
+  </li>
+  <li id="panel-vendors">
+    <h1>
+      Use jsHub to power your product
+    </h1>
+    <p>
+      If your product uses tags to collect data from websites, then your enterprise customers spend a lot of time trying to reconcile your numbers with the other products they use on their website. 
     </p>
     <p>
-      End users benefit from faster page load times and greater
-      transparency.  With a single tag pages are smaller and faster to load.
-      With the Tag Inspector an end user can quickly see what information
-      is being gathered about them.
+      Your enterprise customers also find that implementing the tags is expensive and time consuming. Prospective clients cannot try your product without investing effort upfront, and some will be stuck in a never-ending implementation.
     </p>
+    <p>
+      A standards-based implementation will make life easier for your customers. 
+    </p>  
+    <p>
+      jsHub provides the technology. You help your clients to implement your product; there is no additional "universal tag" vendor between you and your client, and all our code and standards are completely free. When the industry works together, it's better for everyone.
+    </p>
+    <p class="calltoaction">
+      <a href="/standards/">&rarr; Visit the standards project</a>  
+    </p>
+  </li>
+  <li id="panel-markup">
+    <p>
+      Data should only be declared once. There is a better way than embedding data in vendor-specific JavaScript code on the page. Instead, we use a public domain <a href="/hPage/">open standard for page data</a>, covering the information needed by most optimization and analytics software. 
+    </p>
+    <div class="right" style="margin: 0 0.1em 0 0.6em; width: 55%;">
+      <pre class="brush: html; light: true;">
+        &lt;div class="hpage">
+          &lt;span class="name">Homepage&lt;/span>
+        &lt;/div>
+      </pre>
+    </div>
+    <p>
+      The standard is based on HTML <a href="http://microformats.org/">microformats</a>. Microformat data can be indexed by search engines. Anyone who knows HTML can edit the data as part of the page content, and it can be properly integrated with your CMS. 
+    </p>
+    <p style="clear: both">
+      Because the data can be read by any tag, you only declare it once. We believe that deploying software  products on your site should not be an expensive exercise in repeating yourself. Above all, it should not lock you in to the walled garden of proprietary markup for a single product. 
+    </p>
+    <p class="calltoaction">
+      <a href="/projects/markup/">&rarr; Go to the markup project page</a>  
+    </p>
+  </li>
+  <li id="panel-code">
+    <p>
+      The jsHub tag is written in JavaScript and distributed under the BSD open source license.
+    </p>
+    <p>
+      We have a robust plugin architecture to provide consistent data to multiple products. It decouples the code that gathers information from the page, from the code that sends messages to your server. This allows big gains in security and code reuse.
+    </p>
+    <div class="right">
+      <a href="/projects/"><img src="/images/jshub/jshub_tests_300.png" width="300" height="175" alt="Jshub tests screenshot"></a>
+    </div>
+    <p>
+      If you work on a product that collects data from pages, then try creating a plugin for your product and see how easy it is to subscribe to the events you need to record (and create tests for it).
+    </p>
+    <p>
+      And for any JavaScript developer interested in modern best practice, come and see how we do fully automated, cross-browser, continuous integration testing.
+    </p>
+    <p class="calltoaction">
+      <a href="/projects/">&rarr; Go to the developer projects page</a>  
+    </p>
+  </li>
+</ul>
 
-    </div>    
-  </div>
-</div>
+
