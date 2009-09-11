@@ -12,7 +12,7 @@
 
 <div id="sitenav" class="nav">
   <ul>
-    <li class="first {% if page.layout == "home" %} active {% endif %}">
+    <li class="first {% if page.layout == "home" or page.layout == "homepage" %} active {% endif %}">
       <a title="Back home" href="/">Home</a>
     </li>
     <li class="{% if page.layout == "projects" %} active {% endif %}">

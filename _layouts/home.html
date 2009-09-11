@@ -1,21 +1,13 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
 	<title>{{ page.title }} - jsHub</title>
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	
   {% include yui3.html %} 
   {% include stylesheets.html %} 
-  
-  <script src="/javascripts/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/javascripts/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/javascripts/jcarousel/jquery.jcarousel.pack.js" type="text/javascript" charset="utf-8"></script>
-  <link rel="stylesheet" href="/javascripts/jcarousel/jquery.jcarousel.css" type="text/css" media="screen">
-  
   {% include syntaxhighlighter.html %}   
-  <link rel="stylesheet" href="/stylesheets/home.css" type="text/css">
 </head>
-<body class="jshub home yui-cssreset yui-cssfonts yui-cssgrids yui-cssbase">
+<body class="jshub wiki yui-cssreset yui-cssfonts yui-cssgrids yui-cssbase">
 
   {% if page.ribbon %}  
     {% include fork_me_on_github.html %}
@@ -28,11 +20,11 @@
 
     <div class="content">
       <div class="yui-main">
-        <div class="yui-b">
+        <div class="yui-b col1">
   
         {{ content }}
   
-        </div>
+        </div><!-- col1 -->
       </div><!-- yui-main -->
     </div><!-- content -->
 
