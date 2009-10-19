@@ -56,7 +56,7 @@ This was an improvement over static images ([web bugs][web-bug]) which you still
 
 We'll talk more about our **data transport** design in later posts.
 
-However, for most professional web analytics usage this sort of passive data collection is not expressive enough, as we have detailed in [A URL is not enough][post-universal-data]
+However, for most professional web analytics usage this sort of passive data collection is not expressive enough, as we have detailed in [A URL is not enough][post-universal-data].
 
 Almost immediately clients and vendor developers <del>hacked</del> needed means to set variables on a page and have these captured so that they could make sense of their own data.
 
@@ -69,7 +69,7 @@ Despite its growth I would be surprised if many [Google Analytics][ga] implement
 [trackPageView]: http://code.google.com/apis/analytics/docs/gaJS/gaJSApiBasicConfiguration.html#_gat.GA_Tracker_._trackPageview
 [post-universal-data]: /blog/2009/10/17/universal_tag_or_universal_data/
 
-## Pro's and cons of JavaScript for data capture mark-up
+## Pro's and con's of JavaScript for data capture mark-up
 
 So, we need a way to set variables and their values on a web page.
 
