@@ -6,7 +6,7 @@ categories:
 - AJAX
 comments: true
 
-title: Beyond the page view: measuring interactions within the page
+title: Beyond the page view, measuring interactions within the page
 author: Fiann O'Hagan
 --- 
 

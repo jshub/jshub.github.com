@@ -33,7 +33,9 @@ And finally, it's just plain ugly. It's a clear violation of the good software e
 
 So wouldn't it be great if we could rip out all those different tags, and use a single master tag to capture all the data you need?
 
-This is the vision of the Universal Tag. There's no generally accepted definition of the concept yet, but here is a quick list of the features that any self-respecting universal tag should include:
+This is the vision of the [Universal Tag][ut]. There's no generally accepted definition of the concept yet, but here is a quick list of the features that any self-respecting universal tag should include:
+
+ [ut]: http://www.liesdamnedlies.com/2008/10/whence-the-universal-tag.html
 
  * It drives multiple products. Note that we're already stepping back from the word 'universal' here: it won't necessarily support *every* tag out there.
  * It gives you centralized control: there's a single, central location to add / remove tags, rather than touching all the pages or templates on your site.
