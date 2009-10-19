@@ -47,7 +47,7 @@ On any big analytics installation, the metadata is likely to include [at the ver
 
 Which brings us to the core of this article.
 
-<div class="pullout warning">
+<div class="pullout info">
   <p>If all you need is to record page URLs, then marking up pages is really simple.</p>
   <p>But if you need to configure specific data about each page, the cost and effort will greatly exceed the cost of just deploying the library file.</p>
 </div>
@@ -78,5 +78,6 @@ At jsHub we have built both: we have a [microformats-based metadata standard][hP
 
 This gives a clear migration path for any site that wants to move from their existing proprietary format, to a new open format that can be used for any application.
 
-In a future article, I will describe the design decisions we took in creating the new metadata standard. I'll also address what happens in a dynamic world, where AJAX, Flash and Silverlight mean that the page view is no longer enough.
+In a future [article][post-hpage], we will describe the design decisions we took in creating the new metadata standard. I'll also address what happens in a dynamic world, where AJAX, Flash and Silverlight mean that the page view is no longer enough.
 
+[post-hpage]: /blog/2009/10/19/designing-hpage/
