@@ -24,7 +24,7 @@ Now here is the problem: Vendor A hosts the interface on their site. Vendor B ma
 
 While several vendors have expressed a lot of interest in using jsHub technology, none of them will want to become dependent on a third party vendor's SLA and procedures.
 
-We've been discussing this down at jsHub Central, and we struggled even to think of a comparable problem domain to draw inspiration from. Perhaps the closest example is a software aggregator such as the Linux distributions. They assemble a bunch of software tools, many of which will come from third parties. However, the next step is to certify (to some approximation) that this set of tools of specified version numbers all work together, and then distribute it from a central location.
+We've been discussing this down at jsHub Central, and we struggled even to think of a comparable problem domain to draw inspiration from. Perhaps the closest example is a software aggregator such as the Linux distributions. They assemble a bunch of software tools, many of which will come from third parties. However, their next step is to certify (to some approximation) that this set of tools of specified version numbers all work together, and then distribute it from a central location.
 
 They do two things very differently from our constraints. First the aggregator releases on its own timeframe, more or less independent of the release process for new code from the different suppliers. Secondly, there's an official distribution from a central location. They don't need to allow each of the teams who supply code to the project to roll their own distributions.
 
@@ -37,19 +37,22 @@ I'll discuss each of these options in turn.
 
 ## Option 1: centrally hosted front end
 
-The simplest option is the closest to the model of the software aggregators. The code for every published plugin would be hosted on [jshub.org][/].
-
- [/]: /
+The simplest option is the closest to the model of the software aggregators. The code for every published plugin would be hosted on [jshub.org](/).
 
 When a partner wants to make a new plugin available, we will run it through our suite of testing tools (we don't interfere with functionality, but we do test all plugins for compliance with the API and some basic security checks). It then becomes available on the site.
 
-The user comes in and chooses the plugins for their particular requirements. They configure each plugin as needed. We store the configuration in the database so that the user can update it later. Then the tag goes through our packaging process: the core hub code and the selected plugins are concatenated together, with configured values in place in the code; the debugging and lifecycle logging is stripped out; code comments are stripped out; and finally the code is compressed and minimized.
+The user comes in, typically via a link from the vendor website, to the configuration tool on [jshub.org](/). They choose the plugins for their particular requirements, and configure each plugin as needed. We store the configuration in the database so that the user can update it later. Then the tag goes through our packaging process: the core hub code and the selected plugins are concatenated together, with configured values in place in the code; the debugging and lifecycle logging is stripped out; code comments are stripped out; and finally the code is compressed and minimized.
+
+<div class="pullout note">
+  <p>Note that we are talking about the tag configuration tool here, which is only used during the initial setup.</p>
+  <p>There is no server from jsHub involved when end-users are browsing the site.</p>
+</div>
 
 The advantage to this is there is a central clearing house for the code, and a single authoritative location from which to download a certified tag. Users from any of the participating vendors will have a profile in a central location, independent of any one of their suppliers.
 
-The potential downside is that the vendors are ceding some control over the user experience to the jsHub project. We would certainly be happy to look at co-branding or even white labeling the experience, CMS-style, and there are plenty of good examples out there of this working. But still, the vendor doesn't have the same control that would be possible if they build and host their own user interface.
+The potential downside is that the vendors are ceding some control over the user experience to the jsHub project. We expect to offer co-branding or even white labeling the experience, CMS-style, and there are plenty of good examples out there of this working. But still, the vendor doesn't have the same control that would be possible if they build and host their own user interface.
 
-Secondly, the vendors are introducing a new dependency on jshub.org uptime and performance as part of their offering to their clients. Again, this is manageable but requires some thought.
+Secondly, the vendors are introducing a new dependency on jshub.org uptime and performance as part of their offering to their clients. Again, this is manageable, particularly because it does not involve the end-user experience, but requires some thought.
 
 ## Option 2: central back end
 
@@ -77,11 +80,11 @@ It also closes the door to some security optimizations we would hope to make in 
 
 ## And the winner is ...
 
-Right now, this is a very open question. We would be happy to work towards any of these solutions.
+Right now, we are open minded. We would be happy to work towards any of these solutions.
 
-My own opinion is that, on balance, the first option is the simplest and most preferable. As I have suggested above, we'd be happy to co-brand parts of the configuration tool, but I am not sure that any one vendor should have control of the overall experience. The user is not configuring a single product, they are potentially configuring a suite of products within the same workflow.
+My own opinion is that, on balance, the first option is the simplest and most preferable. We will be hosting the configuration tool anyway, because not all partners want to host it. And we are making plans to co-brand parts of the configuration tool. But I am not sure that any one vendor should have control of the overall experience. The user is not configuring a single product, they are potentially configuring a suite of products from different vendors within the same workflow.
 
-But jsHub is an open process, and this is only one opinion. 
+jsHub is an open process, and this is only my opinion. We would be very interested to receive feedback on either of the other options.
 
 Does anyone have any examples of projects that face a similar question? How are they resolving it? Are there other options we have not considered yet? 
 
