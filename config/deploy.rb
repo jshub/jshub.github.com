@@ -69,6 +69,12 @@ namespace :custom do
     run "ln -nfs /var/capistrano/retail/current/public #{webroot}/retail"
   end
 
+  desc "Make symlink for server specific robots.txt" 
+  task :link_robots do
+    run "ln -nfs #{shared_path}/robots.txt #{release_path}/robots.txt" 
+  end
+
 end
 
 after "deploy:restart", "custom:website"
+after "deploy:symlink",   "custom:link_robots"
