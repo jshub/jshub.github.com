@@ -14,9 +14,6 @@ Business focussed definition of the project and why are we doing it.
  3. Universal format for JS events - AJAX, Flash tracking
  4. Migration path for existing clients to adopt microformats
 
-## Configurator architecture (Fiann)
-The tag consists of chunks of code supplied by multiple vendors. At least some of the vendors would like to host the configuration tool themselves, or at least an entry point to it, which means you can configure data from a third party. How do you ensure the latest versions and the SLAs so that vendors are not beholden to each other?
-
 ## FAQ (Liam)
 Create an FAQ and post about its existence:
  1. How to keep informed - twitter, blog, mailing lists, IM
@@ -32,6 +29,9 @@ Follow-up post: From Spidey data analysis make some reports on the raw use of GA
 
 ## Using Cuzillion to understand tagging performance (Liam)
 Step through examples to analyse a web page, turn it into a Cuzillion page and get real results
+
+## What is the 'essence' of jsHub?
+What would the core of jsHub consist of. What's the minimum possible functionality and how big would the tag be if we reduced it right down to that.
 
 ## Researching a microformat proposal and the process (Liam)
 ## Using wildcard DNS and base href for client mockups (Liam)
@@ -52,3 +52,10 @@ Step through examples to analyse a web page, turn it into a Cuzillion page and g
  10. Inaccuracy of multiple tags and the different counts given by different products
  11. Spidey data analysis - the rise of GA (JGC)
  13. What is 'tag weight'?
+
+
+# Released articles
+
+## Configurator architecture (Fiann)
+(done) The tag consists of chunks of code supplied by multiple vendors. At least some of the vendors would like to host the configuration tool themselves, or at least an entry point to it, which means you can configure data from a third party. How do you ensure the latest versions and the SLAs so that vendors are not beholden to each other?
+https://jshub.org/blog/2009/10/19/configurator_hosting/
