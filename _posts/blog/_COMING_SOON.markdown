@@ -26,6 +26,18 @@ Create an FAQ and post about its existence:
  5. What about the Inspector and Configurator source code? Planned to release, happy to give advanced access anyone who asks.
  6. And what about Demo Store source code? Already based on Spreecommerce.
  7. What OS projects do you use? jQuery, Rhino, YUI, env-js, RoR, Flowplayer, RunCodeRun, Github, git, svn, Hudson, Firebug
+ 8. Tag weight?
+
+## jsHub tag features (Liam)
+The features and functionality of the jsHub tag in addition to traditional analytics tags:
+ 1. Event driven - jsHub.trigger() and lifecycles
+ 2. HTML DOM value excerpting
+ 3. Multiple instances
+ 4. Extensible via plugins
+ 5. API for comon tasks - get data, sent data
+ 6. Introspection points for the Inspector
+ 7. Test suite
+ 8. Open source development, bug fixes and security processes
 
 ## Do users use GA features? (Liam)
 Follow-up post: From Spidey data analysis make some reports on the raw use of GA as a hit counter vs. actually setting a page-name or other attributes.
