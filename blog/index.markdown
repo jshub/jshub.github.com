@@ -1,11 +1,11 @@
 ---
 layout: blog
-title: Recent posts
+title: Latest News
 ---
 
 {% if site.posts != empty %}
   <ul class="recent">
-    {% for post in site.posts limit:10 %}
+    {% for post in site.posts limit:5 %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
@@ -13,6 +13,10 @@ title: Recent posts
 {% else %}
   <p>The are no recent posts.</p>
 {% endif %}
+
+<h3>Commentary</h3>
+
+{% include tweets.html %}
 
 ### Open Source Projects
 

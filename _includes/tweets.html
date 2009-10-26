@@ -1,0 +1,26 @@
+<!-- JS include recent tweets -->
+<div class="tweet"><!-- placeholder --></div>
+<script src="/javascripts/tweet/jquery.tweet.js" type="text/javascript"><!-- tweet.js --></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".tweet").tweet({
+            username: "jshuborg",
+            join_text: "auto",
+            avatar_size: 0,
+            count: 10,
+            auto_join_text_default: "We said,",
+            auto_join_text_ed: "We",
+            auto_join_text_ing: "We were",
+            auto_join_text_reply: "We replied to",
+            auto_join_text_url: "We were checking out",
+            loading_text: "loading tweets..."
+        });
+    });
+</script>
+<style type="text/css">
+  .tweet ul {
+    list-style-type: none;
+    margin: 0 0 1em;
+    padding: 0;
+  }
+</style>
