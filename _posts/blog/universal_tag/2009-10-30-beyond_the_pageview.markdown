@@ -33,6 +33,9 @@ It should be obvious that neither page view based metrics, nor time on site, tel
 
 In a [previous post][data], I suggested [microformats][mf] as a way of expressing page markup. But the rich media interactions are, by definition, happening after the page has loaded, and therefore cannot be included when the page is generated.
 
+ [data]: /blog/2009/10/17/universal_tag_or_universal_data/
+ [mf]: http://microformats.org/
+
 <div class="pullout info">
   <p>There are actually <strong>two separate standards</strong> needed. One is for the events that are encoded in the page when it's loaded. The second is for events in the script layer as the page is running in the browser.</p>
 </div>
