@@ -7,7 +7,9 @@ title: About the project
 
 jsHub.org is a non-profit organization sponsoring [a number of projects](/projects/). Our goal is to make data capture for web analytics and other online optimization solutions more professional.
 
-The project founders are Liam Clancy and Fiann O'Hagan. 
+The project founders are 
+<span class="vcard founder"><span class="url fn n uid">Liam Clancy</span></span> and
+<span class="vcard founder"><span class="url fn n uid">Fiann O'Hagan</span></span>.
 
 Liam and Fiann have many years of professional experience deploying JavaScript for data capture and secure content targeting on some of the highest traffic enterprise websites on the web. 
 
