@@ -6,7 +6,15 @@ title: Latest News
 {% if site.posts != empty %}
   <ul class="recent">
     {% for post in site.posts limit:5 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li class="hentry">
+        <abbr class="published" title="{{ post.date }}">
+          {{ post.date | date_to_string }}
+        </abbr> 
+        &raquo; 
+        <a class="entry-title" href="{{ post.url }}" rel="bookmark">
+          {{ post.title }}
+        </a>
+      </li>
     {% endfor %}
   </ul>
    &raquo; [More](archive.html)
