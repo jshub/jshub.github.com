@@ -7,7 +7,7 @@ title: Latest News
   <ul class="recent">
     {% for post in site.posts limit:5 %}
       <li class="hentry">
-        <abbr class="published" title="{{ post.date }}">
+        <abbr class="published" title="{{ post.date | date_to_xmlschema }}">
           {{ post.date | date_to_string }}
         </abbr> 
         &raquo; 
