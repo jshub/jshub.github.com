@@ -2,9 +2,13 @@ How-to
 ======
 
 * To generate the site into the _site folder: `jekyll`
-* To run the site locally for development, run `jekyll --server` which creates an http server on localhost:4000
+* To run the site locally for development, run `jekyll --server --auto` which creates an http server on localhost:4000
 * To deploy to staging environment, just commit in the master branch and `git push origin master` (or just git push). It will be deployed to http://jshub.github.com/ NB this is open and public although not linked, so don't put anything secret here!
 * To deploy to the live server on http://jshub.org/ run `cap deploy`
+* To test the links:
+   * Install from http://linkchecker.sourceforge.net/
+   * `linkchecker http://fiann.local:4000/ --file-output=html/linkchecker-out.html` then `open linkchecker-out.html`. 
+   * Seems to be broken for root relative links, though.
 
 
 Notes
