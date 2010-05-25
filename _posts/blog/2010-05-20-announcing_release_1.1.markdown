@@ -1,7 +1,8 @@
+---
 published: true
 layout: post
 categories: 
-- site-news
+- site news
 comments: true
 
 title: Announcing release 1.1
