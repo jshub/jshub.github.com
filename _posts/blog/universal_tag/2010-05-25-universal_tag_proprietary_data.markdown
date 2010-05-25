@@ -39,6 +39,8 @@ Because this is product-specific proprietary markup, it adds cost to your implem
 
 And the markup can't be re-used for anything else. Omniture has a great solution in [Genesis][gn] where the data from the SiteCatalyst tags is fed to other products. In some circumstances, that is a cost effective method of implementing. But where the data is more complex, you end up with a lot of flaky glue code, including this from Omniture's own homepage:
 
+ [gn]: http://www.omniture.com/en/products/marketing_integration/genesis
+
 <pre class="brush: js;">
 /*TNT FOOTER CONTINUED */
 if(typeof mboxCreate == 'function') {
