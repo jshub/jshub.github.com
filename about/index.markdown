@@ -27,4 +27,4 @@ Any feedback? Please join the [jsHub-users mailing list](http://groups.google.co
 
 Please note that lists are moderated (to prevent spam). Your first messages may take a few hours to get through, but future messages will show up instantly once you are out of the new-member-is-moderated policy.
 
-Alternatively, feel free to contact us directly at <mailto:liamc@jshub.org> and <mailto:fianno@jshub.org>.
+Alternatively, feel free to contact me directly at <mailto:fianno@jshub.org>.
