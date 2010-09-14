@@ -69,13 +69,21 @@ jsHub also comes with the [Tag Inspector](/projects/inspector/), which allows si
 ## Simplicity for plugin developers ##
 The jsHub core hub provides a simple event based API for plugins to communicate with. A plugin simply needs to `bind` (subscribe to) the events that is it interested in, and `trigger` events that is has created.
 
-The jsHub project includes sample plugins for collecting data from the page, and for transmitting data to the server. There are currently five example plugins available. There are two plugins for reading markup on the page:
- * [hPage-plugin.js](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-capture/hPage-plugin.js), a reference implementation of the [hPage specification](/hPage/)
- * [google-analytics-markup-plugin.js](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-capture/google-analytics-markup-plugin.js), an illustration of how to collect information from existing markup contained in JS variables and function calls
+The jsHub project includes sample plugins for collecting data from the page, and for transmitting data to the server. 
 
-There are two example data transport plugins:
- * [sample-get-plugin.js](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-transport/sample-get-plugin.js), a starting point for creating a plugin to send messages using a standard single pixel image
- * [sample-post-plugin.js](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-transport/sample-post-plugin.js), a starting point for creating a plugin to send messages by posting a form
+There is an example plugin for reading markup on the page:
+
+ * [hPage-plugin.js](https://github.com/jshub/jshub-core/blob/master/app/javascripts/data-capture/hPage-plugin.js), a reference implementation of the [hPage specification](/hPage/)
+
+We currently support plugins for two commercial services in production.
+
+ * [Causata](http://www.causata.com/) provides real-time customer intelligence. They also help to sponsor jsHub.
+ * [Google Analytics](http://www.google.com/analytics/), the free web analytics service. Note that jsHub does not integrate fully with Google Analytics. Instead, the plugin code places the normal tag for GA onto the page, and then maps jsHub events on to the tag.
+
+For developers, there are two example data transport plugins:
+
+ * [sample-get-plugin.js](http://github.com/jshub/jshub-core/blob/master/app/javascripts/data-transport/sample-get-plugin.js), a starting point for creating a plugin to send messages using a standard single pixel image
+ * [sample-post-plugin.js](http://github.com/jshub/jshub-core/blob/master/app/javascripts/data-transport/sample-post-plugin.js), a starting point for creating a plugin to send messages by posting a form
 
 These are extensively commented and provide a simple starting point for developers to begin creating plugins for other products.
 
