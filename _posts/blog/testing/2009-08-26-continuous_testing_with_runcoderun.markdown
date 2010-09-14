@@ -11,6 +11,8 @@ author: Liam Clancy
 feature: core
 --- 
 
+<div class="pullout note"><em>Edit</em>: RunCodeRun is no longer operational, so the information here is for historical interest only. You will be missed!</div>
+
 When building any JavaScript library for public (or internal) use, the supply of good tests is very important. They not only protect the code-base from the unintentional breakage when adding or removing features, but also provide a useful means to demonstrate all the features of the library in a practical manner, in many cases replacing the need for extensive documentation.
 
 This is the first in a series of posts to discuss how we have deeply integrated testing into our JavaScript development process, starting first with **Continuous Testing**.
