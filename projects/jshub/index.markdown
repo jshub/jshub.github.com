@@ -32,18 +32,21 @@ A tag in this sense is a script that runs when the page is loaded, and collects 
 If you are interested in how the code works, then please read on.
 
 ## Plugin architecture and extensibility ##
-The biggest change with the jsHub architecture is that it breaks the tight coupling between capturing data from the page and sending the data to a server. This means that the same tag can support multiple different formats of markup on the same page, and multiple formats of data collection server for different products. 
+The biggest change with the jsHub architecture is that it breaks the tight coupling between capturing data from the page and sending the data to a server. 
 
-![jsHub plugin architecture](/images/jshub/jsHub_plugin_architecture.png)
+Traditionally, sites have several (sometimes, very many) separate tags on the page.
+
+![Multiple tags on a single page](/images/jshub/plugin_architecture_before.png)
+
+Each of the tags will collect information from the page, and each one will then create a request for a single pixel image from the server. Each of the tags requires similar information, but the data that is sent is in a separate proprietary format in each case.
+
+The jsHub tag challenges this approach, by using a single central tag, the "hub", with a collection of plugins that can speak to each server in the appropriate format. This means that the same tag can support multiple different formats of markup on the same page, and multiple servers for different products. 
+
+![jsHub plugin architecture](/images/jshub/plugin_architecture_after.png)
 
 The jsHub tag doesn't attempt to process or understand the formats of different vendors' products. Instead, it provides a framework for vendors to supply their own plugins to support their products, with a common API for sharing the data between them.
 
 A customer can implement the tag to deploy one product. If the customer wants to deploy another product after that only a plugin needs to be added. No re-tagging of the site would be needed so customers and vendors both benefit from a huge reduction in time and effort to deploy tags across the site.
-
-## Built on jQuery ##
-The jsHub project is built on top of the [jQuery library](http://jquery.com/). jQuery is a very robust and high performance cross-platform library for manipulating HTML. jsHub uses jQuery to access microformat markup from the page document object model.
-
-Most of the microformat parsing library is implemented as jQuery selectors, and so will be familiar to developers who have used jQuery before.
 
 ## Robust, well tested, open source code ##
 Traditionally it has been difficult to test JavaScript thoroughly. Unlike server applications, the script must run in a great variety of different environments, on different browsers and operating systems, and shares a global namespace with other code on the page. There has not been anything nearly equivalent to the robust automated tools for testing Java and other server code.
@@ -82,4 +85,6 @@ These are extensively commented and provide a simple starting point for develope
 
 The developer application is a Ruby on Rails application that contains the code, the tests, and some scripts to run the tests from the command line. You can also see the [unit tests online](/core/), running from the same application.
 
-Please send any feedback, bug reports or comments to <info@jshub.org> to get through to one of the team. Thanks!
+Please send any feedback, bug reports or comments to <info@jshub.org> to get through to one of the team. 
+
+Thanks!
