@@ -17,6 +17,8 @@ The jsHub tag project consists of a JavaScript tag, with associated tools and do
 
 Vendors can also supply plugins to read their own markup. If a plugin is available to read the markup on your pages, then you can begin using the jsHub tag immediately. The tag and the markup are independent and each can be deployed on their own without the other.
 
+*Project status:* The jsHub tag is currently used in production.
+
  * [jsHub tag project page](/projects/jshub/)
  * [Configure a tag to use on your site](/configurator/)
 
@@ -24,15 +26,13 @@ Vendors can also supply plugins to read their own markup. If a plugin is availab
 
 The other main project is an open specification for marking up metadata about pages viewed by users and is intended for web analytics and related solutions.  
 
+*Project status:* The markup project is currently experimental.
+
  * [Microformat markup project page](/projects/markup/)
 
 ## Tag Inspector ##
-The Tag Inspector provides a simple, user friendly view of the tag and all data collected on the page.  The Inspector works in a browser and can be accessed directly whenever a page of interest is being viewed. You can see the Inspector in action by visiting our demo store.
+The Tag Inspector provides a simple, user friendly view of the tag and all data collected on the page.  The Inspector works in a browser and can be accessed directly whenever a page of interest is being viewed. 
+
+*Project status:* The Inspector is currently used in production.
 
  * [Inspector project page](/projects/inspector/)
-
-## Demo Store ##
-The jsHub.org demo store is an online store front used to demonstrate the hPage specification, the jsHub tag and the Inspector.
-
- * [Demo store project page](/projects/demos/)
- * [Enter the jsHub.org Demo Store](/retail/)
